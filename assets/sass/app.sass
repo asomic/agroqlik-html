@@ -22,25 +22,31 @@ p
 h1
     font-size: 42px
     line-height: 110%
+    font-weight: 700
 
 h2
     font-size: 38px
     line-height: 105%
+    font-weight: 700
 
 h3
     font-size: 32px
     line-height: 120%
+    font-weight: 700
 
 h4
     font-size: 28px
     line-height: 115%
+    font-weight: 700
 h5
     font-size: 22px
     line-height: 110%
+    font-weight: 700
 
 h6
     font-size: 17px
     line-height: 110%
+    font-weight: 700
 
 a
     text-decoration: none
@@ -83,7 +89,7 @@ header
             justify-content: space-between
             align-items: center
             margin-top: 48px
-            .logo                
+            a.logo                
                 img
                     width: 149px
 
@@ -119,9 +125,6 @@ section.hero
             text-align: center
             font-size: 16px
             margin-bottom: 26px
-            
-
-        a.button
 
 // Cuando es igual o menor a 1200px resolucion
 @media (max-width: 1200px)
@@ -130,6 +133,97 @@ section.hero
             h1 
             p
             a.button
+
+
+section.presentacion
+    background-image: url('../images/campo-4.jpg')
+    background-position: center
+    background-size: cover
+    display: flex
+    justify-content: flex-end
+
+    div.card
+        background-color: $light-green         
+        width: 30%
+        padding: 50px 45px
+        margin:
+            top: 61px
+            bottom: 90px
+        border-radius: 4px
+        h2
+            font-weight: 700
+            margin-bottom: 32px  
+            color: $blue
+        div.item
+            width: 100%
+            margin-bottom: 1.8em
+            &:last-child
+                margin-bottom: 0
+            div.title
+                width: 100%
+                display: flex
+                flex-wrap: no-wrap
+                align-items: center
+                margin-bottom: 15px
+                box-sizing: border-box
+                img
+                    width: 30px
+                    height: 100%
+                    margin-right: 14px       
+                h5
+                    font-weight: 700
+                    width: 100%   
+            
+section.the-app
+    background-image: url('../images/back-lines-2.png')
+    background-size: cover
+    display: flex
+    justify-content: flex-start
+    width: 50%
+    div.the-app-inner 
+        display: flex 
+        flex-wrap: wrap
+        div.img
+            margin: 
+                top: 88px
+                right: 30px
+            img                 
+        //comienso del panel izquierdo           
+        div.data        
+            margin: 
+                top: 139px
+            h3  
+                width: 90%
+                color: $blue 
+                // margin-top: 179px
+                margin-bottom: 38px 
+              
+            div.items
+         
+                
+                div.item
+                    width: 100%
+                    display: flex 
+                    flex-wrap: no-wrap
+                    // align-items:                                      
+                    
+                    img
+                        width: 20px
+                        height: 100%
+                        margin-right: 14px  
+                        margin-bottom: 12px                      
+            div.buttons
+                display: flex
+                                
+                
+                
+                a
+                    
+                    
+                    img
+                        height: 50px
+                    
+        
 
 
                     

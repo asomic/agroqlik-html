@@ -233,31 +233,37 @@ p {
 h1 {
   font-size: 42px;
   line-height: 110%;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 38px;
   line-height: 105%;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 32px;
   line-height: 120%;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 28px;
   line-height: 115%;
+  font-weight: 700;
 }
 
 h5 {
   font-size: 22px;
   line-height: 110%;
+  font-weight: 700;
 }
 
 h6 {
   font-size: 17px;
   line-height: 110%;
+  font-weight: 700;
 }
 
 a {
@@ -299,7 +305,7 @@ header div.header-inner {
   align-items: center;
   margin-top: 48px;
 }
-header div.header-inner .logo img {
+header div.header-inner a.logo img {
   width: 149px;
 }
 header div.header-inner div.buttons a.button.left {
@@ -335,4 +341,90 @@ section.hero div.hero-inner p {
   text-align: center;
   font-size: 16px;
   margin-bottom: 26px;
+}
+
+section.presentacion {
+  background-image: url("../images/campo-4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+section.presentacion div.card {
+  background-color: #F7FCF9;
+  width: 30%;
+  padding: 50px 45px;
+  margin-top: 61px;
+  margin-bottom: 90px;
+  border-radius: 4px;
+}
+section.presentacion div.card h2 {
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #005377;
+}
+section.presentacion div.card div.item {
+  width: 100%;
+  margin-bottom: 1.8em;
+}
+section.presentacion div.card div.item:last-child {
+  margin-bottom: 0;
+}
+section.presentacion div.card div.item div.title {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+section.presentacion div.card div.item div.title img {
+  width: 30px;
+  height: 100%;
+  margin-right: 14px;
+}
+section.presentacion div.card div.item div.title h5 {
+  font-weight: 700;
+  width: 100%;
+}
+
+section.the-app {
+  background-image: url("../images/back-lines-2.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+section.the-app div.the-app-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.the-app div.the-app-inner div.img {
+  margin-top: 88px;
+  margin-right: 30px;
+}
+section.the-app div.the-app-inner div.data {
+  margin-top: 139px;
+}
+section.the-app div.the-app-inner div.data h3 {
+  width: 90%;
+  color: #005377;
+  margin-bottom: 38px;
+}
+section.the-app div.the-app-inner div.data div.items div.item {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+section.the-app div.the-app-inner div.data div.items div.item img {
+  width: 20px;
+  height: 100%;
+  margin-right: 14px;
+  margin-bottom: 12px;
+}
+section.the-app div.the-app-inner div.data div.buttons {
+  display: flex;
+}
+section.the-app div.the-app-inner div.data div.buttons a img {
+  height: 50px;
 }
