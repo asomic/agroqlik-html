@@ -1,6 +1,6 @@
-/* set  */
+/* set */
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #F7FCF9;
   font-size: 15px;
 }
@@ -66,6 +66,7 @@ a {
   font-weight: 700;
   border: solid 1px #5FAE31;
 }
+
 .button.outline {
   background-color: transparent;
   border: solid 1px #373737;
@@ -81,50 +82,68 @@ a {
 section.the-app {
   background-image: url("../images/back-lines-2.png");
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  width: 580px;
-  height: 584px;
-  margin-bottom: 160px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
 }
+
 section.the-app div.the-app-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  width: 25%;
 }
+
 section.the-app div.the-app-inner div.img {
   margin-top: 88px;
-  margin-height: 30%;
-  margin-left: 140px;
-  margin-right: 130px;
+  margin-right: 50%;
 }
+
 section.the-app div.the-app-inner div.img img {
-  width: 402px;
-  height: 587px;
+  height: 80%;
 }
+
 section.the-app div.the-app-inner div.data {
-  widht: 433px;
-  height: 397px;
+  margin-top: 100px;
+  margin-left: 5%;
 }
+
 section.the-app div.the-app-inner div.data h3 {
+  width: 90%;
   color: #005377;
+  margin-top: 70%;
+  margin-bottom: 6%;
 }
+
 section.the-app div.the-app-inner div.data div.items {
   width: 433px;
 }
+
 section.the-app div.the-app-inner div.data div.items div.item {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
 }
+
 section.the-app div.the-app-inner div.data div.items div.item img {
   width: 30px;
 }
+
 section.the-app div.the-app-inner div.data div.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 7%;
 }
+
 section.the-app div.the-app-inner div.data div.buttons a img {
-  height: 46px;
-  margin-left: 15px;
+  height: 50px;
 }
+/*# sourceMappingURL=presentacionapp.css.map */

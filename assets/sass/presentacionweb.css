@@ -1,6 +1,6 @@
-/* set  */
+/* set */
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #F7FCF9;
   font-size: 15px;
 }
@@ -66,6 +66,7 @@ a {
   font-weight: 700;
   border: solid 1px #5FAE31;
 }
+
 .button.outline {
   background-color: transparent;
   border: solid 1px #373737;
@@ -81,33 +82,53 @@ a {
 section.the-webapp {
   background-image: url("../images/back-lines-3.png");
   background-size: cover;
-}
-section.the-webapp div.the-webapp-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
+section.the-webapp div.the-webapp-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 section.the-webapp div.the-webapp-inner div.data {
-  align-content: center;
-  width: 407px;
-  height: 314px;
+  margin-top: 5%;
+  margin-left: 117px;
+  margin-bottom: 10%;
   width: 700px;
   color: #005377;
 }
+
+section.the-webapp div.the-webapp-inner div.data div.checks {
+  margin-top: 30px;
+}
+
 section.the-webapp div.the-webapp-inner div.data div.checks div.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 section.the-webapp div.the-webapp-inner div.data div.checks div.check img {
-  width: 20px;
-  height: 15px;
-  margin-right: 1%;
+  width: 30px;
 }
+
 section.the-webapp div.the-webapp-inner div.img {
   margin-left: 114px;
   margin-bottom: 66px;
 }
+
 section.the-webapp div.the-webapp-inner div.img img {
-  width: 596px;
-  height: 433px;
+  width: 100%;
 }
+/*# sourceMappingURL=presentacionweb.css.map */
