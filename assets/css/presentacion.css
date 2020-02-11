@@ -1,0 +1,124 @@
+/* set  */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #F7FCF9;
+  font-size: 15px;
+}
+
+/* Fuentes */
+p {
+  line-height: 135%;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 105%;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 115%;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 17px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #373737;
+}
+
+/* colores */
+.color-green {
+  color: #85CB33;
+}
+
+/* botones */
+.button {
+  border-radius: 4px;
+  background-color: #5FAE31;
+  padding: 11px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border: solid 1px #5FAE31;
+}
+.button.outline {
+  background-color: transparent;
+  border: solid 1px #373737;
+  color: #373737;
+}
+
+/* paddings */
+.paddings-l-r {
+  padding-left: 112px;
+  padding-right: 112px;
+}
+
+section.presentacion {
+  background-image: url("../images/campo-4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+section.presentacion div.card {
+  background-color: #F7FCF9;
+  width: 30%;
+  padding: 50px 45px;
+  margin-top: 61px;
+  margin-bottom: 90px;
+  border-radius: 4px;
+}
+section.presentacion div.card h2 {
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #005377;
+}
+section.presentacion div.card div.item {
+  width: 100%;
+  margin-bottom: 1.8em;
+}
+section.presentacion div.card div.item:last-child {
+  margin-bottom: 0;
+}
+section.presentacion div.card div.item div.title {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+section.presentacion div.card div.item div.title img {
+  width: 30px;
+  height: 100%;
+  margin-right: 14px;
+}
+section.presentacion div.card div.item div.title h5 {
+  font-weight: 700;
+  width: 100%;
+}

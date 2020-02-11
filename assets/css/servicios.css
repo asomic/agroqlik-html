@@ -1,0 +1,136 @@
+/* set  */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #F7FCF9;
+  font-size: 15px;
+}
+
+/* Fuentes */
+p {
+  line-height: 135%;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 105%;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 115%;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 17px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #373737;
+}
+
+/* colores */
+.color-green {
+  color: #85CB33;
+}
+
+/* botones */
+.button {
+  border-radius: 4px;
+  background-color: #5FAE31;
+  padding: 11px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border: solid 1px #5FAE31;
+}
+.button.outline {
+  background-color: transparent;
+  border: solid 1px #373737;
+  color: #373737;
+}
+
+/* paddings */
+.paddings-l-r {
+  padding-left: 112px;
+  padding-right: 112px;
+}
+
+section.servicios {
+  background-image: url("../images/campo-3.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+section.servicios div.servicios-inner h2 {
+  color: #F7FCF9;
+  font-weight: 700;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  padding: 6%;
+}
+section.servicios div.servicios-inner div.items {
+  display: flex;
+  flex-wrap: nowrap;
+}
+section.servicios div.servicios-inner div.items div.item {
+  background-color: #F7FCF9;
+  width: 300px;
+  padding: 60px;
+  margin: 1%;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  margin-bottom: 5%;
+}
+section.servicios div.servicios-inner div.items div.item div.header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 5%;
+}
+section.servicios div.servicios-inner div.items div.item div.header img {
+  margin-right: 10%;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+section.servicios div.servicios-inner div.items div.item div.checks {
+  margin-top: 10%;
+}
+section.servicios div.servicios-inner div.items div.item div.checks div.check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+section.servicios div.servicios-inner div.items div.item div.checks div.check img {
+  width: 10%;
+}
+section.servicios div.servicios-inner div.items div.item div.checks div.check p {
+  width: 80%;
+}
