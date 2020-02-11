@@ -80,12 +80,17 @@ a {
 
 section.equipo div.equipo-inner h2 {
   color: #005377;
-  text-align: center;
   font-weight: 700;
-  margin-top: 26px;
-  width: 100%;
-  text-align: center;
+  width: 509px;
+  height: 93px;
 }
-section.equipo div.equipo-inner h2 div.personas {
-  display: flex;
+section.equipo div.equipo-inner div.personas div.persona div.img img {
+  width: 313px;
+  height: 366px;
+  border-radius: 4px;
+  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+}
+section.equipo div.equipo-inner div.personas div.persona div.img div.data {
+  width: 313px;
+  height: 366px;
 }

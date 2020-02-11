@@ -97,40 +97,42 @@ section.servicios div.servicios-inner h2 {
 }
 section.servicios div.servicios-inner div.items {
   display: flex;
-  flex-wrap: nowrap;
+  width: 100%;
 }
 section.servicios div.servicios-inner div.items div.item {
   background-color: #F7FCF9;
-  width: 300px;
-  padding: 60px;
   margin: 1%;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
-  margin-bottom: 5%;
+  width: 340px;
+  height: 333px;
 }
 section.servicios div.servicios-inner div.items div.item div.header {
+  margin-left: 10%;
+  width: 268%;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
-  margin-bottom: 5%;
 }
 section.servicios div.servicios-inner div.items div.item div.header img {
-  margin-right: 10%;
-  display: flex;
-  width: 50px;
-  height: 50px;
+  width: 5%;
+  height: 45px;
+  margin-right: 2%;
+}
+section.servicios div.servicios-inner div.items div.item div.header h5 {
+  color: #005377;
+  width: 95%;
 }
 section.servicios div.servicios-inner div.items div.item div.checks {
-  margin-top: 10%;
+  margin-left: 15%;
 }
 section.servicios div.servicios-inner div.items div.item div.checks div.check {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 section.servicios div.servicios-inner div.items div.item div.checks div.check img {
-  width: 10%;
+  width: 20px;
+  height: 17px;
+  margin-right: 1%;
 }
 section.servicios div.servicios-inner div.items div.item div.checks div.check p {
-  width: 80%;
+  margin: 5px;
 }
