@@ -1,79 +1,50 @@
-/* set  */
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #F7FCF9;
-  font-size: 15px;
+section.hectareas {
+  background-image: url("../images/back-lines-3.png");
+  background-size: 100%;
+  text-align: center;
+  margin-top: 5%;
 }
-
-/* Fuentes */
-p {
-  line-height: 135%;
+section.hectareas div.hectarea.inner img {
+  width: 20%;
+  height: 150px;
 }
-
-h1 {
-  font-size: 42px;
-  line-height: 110%;
+section.hectareas div.items {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 7%;
+}
+section.hectareas div.items div.item {
+  background-color: white;
+  width: 180px;
+  height: 178px;
+  margin-right: 4%;
+  text-align: center;
+  align-items: center;
+  margin-top: 2%;
+}
+section.hectareas div.items div.item img {
+  margin-top: 30px;
+  width: 45px;
+  height: 48px;
+}
+section.hectareas div.items div.item p {
+  margin-top: -15%;
   font-weight: 700;
 }
-
-h2 {
-  font-size: 38px;
-  line-height: 105%;
+section.hectareas div.items div.itemm {
+  background-color: white;
+  width: 180px;
+  height: 178px;
+  margin-right: 4%;
+  text-align: center;
+  align-items: center;
+}
+section.hectareas div.items div.itemm img {
+  margin-top: 30px;
+  width: 45px;
+  height: 48px;
+}
+section.hectareas div.items div.itemm p {
+  margin-top: -20%;
   font-weight: 700;
-}
-
-h3 {
-  font-size: 32px;
-  line-height: 120%;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 28px;
-  line-height: 115%;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 22px;
-  line-height: 110%;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 17px;
-  line-height: 110%;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: #373737;
-}
-
-/* colores */
-.color-green {
-  color: #85CB33;
-}
-
-/* botones */
-.button {
-  border-radius: 4px;
-  background-color: #5FAE31;
-  padding: 11px 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  border: solid 1px #5FAE31;
-}
-.button.outline {
-  background-color: transparent;
-  border: solid 1px #373737;
-  color: #373737;
-}
-
-/* paddings */
-.paddings-l-r {
-  padding-left: 112px;
-  padding-right: 112px;
 }

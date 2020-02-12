@@ -90,6 +90,8 @@ section.the-app {
 section.the-app div.the-app-inner {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 section.the-app div.the-app-inner div.img {
   margin-top: 88px;

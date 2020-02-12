@@ -85,6 +85,10 @@ section.servicios {
   display: flex;
   justify-content: center;
 }
+section.servicios div.servicios-inner {
+  margin-left: auto;
+  margin-right: auto;
+}
 section.servicios div.servicios-inner h2 {
   color: #F7FCF9;
   font-weight: 700;

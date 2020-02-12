@@ -78,6 +78,10 @@ a {
   padding-right: 112px;
 }
 
+section.equipo div.equipo-inner {
+  margin-left: auto;
+  margin-right: auto;
+}
 section.equipo div.equipo-inner h2 {
   color: #005377;
   font-weight: 700;
