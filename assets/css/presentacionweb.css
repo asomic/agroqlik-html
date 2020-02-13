@@ -20,6 +20,7 @@ h2 {
   font-size: 38px;
   line-height: 105%;
   font-weight: 700;
+  color: #005377;
 }
 
 h3 {
@@ -90,24 +91,34 @@ section.the-webapp div.the-webapp-inner div.data {
   align-content: center;
   width: 407px;
   height: 314px;
-  width: 700px;
+  margin-left: 175px;
+}
+section.the-webapp div.the-webapp-inner div.data h3 {
+  width: 407px;
+  height: 113px;
   color: #005377;
+}
+section.the-webapp div.the-webapp-inner div.data div.checks {
+  margin-bottom: 13px;
 }
 section.the-webapp div.the-webapp-inner div.data div.checks div.check {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 section.the-webapp div.the-webapp-inner div.data div.checks div.check img {
   width: 20px;
   height: 15px;
-  margin-right: 1%;
+}
+section.the-webapp div.the-webapp-inner div.data div.checks div.check p {
+  margin-bottom: 5px;
 }
 section.the-webapp div.the-webapp-inner div.img {
   margin-left: 114px;
-  margin-bottom: 66px;
+  margin-bottom: 67px;
+  margin-right: 128px;
 }
 section.the-webapp div.the-webapp-inner div.img img {
   width: 596;
   height: 443px;
+  margin-right: 128px;
 }

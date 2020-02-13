@@ -20,6 +20,7 @@ h2 {
   font-size: 38px;
   line-height: 105%;
   font-weight: 700;
+  color: #005377;
 }
 
 h3 {
@@ -82,19 +83,72 @@ section.equipo div.equipo-inner {
   margin-left: auto;
   margin-right: auto;
 }
+section.equipo div.equipo-inner img.hoja {
+  position: absolute;
+  width: 147.95px;
+  height: 150px;
+  margin-left: 700px;
+  margin-top: -30px;
+}
 section.equipo div.equipo-inner h2 {
+  position: relative;
   color: #005377;
   font-weight: 700;
   width: 509px;
   height: 93px;
+  margin-top: 200px;
+  margin-left: 566px;
+  margin-right: 566px;
+  line-height: 120%;
+}
+section.equipo div.equipo-inner div.personas {
+  display: flex;
+  margin: 20px;
+}
+section.equipo div.equipo-inner div.personas div.persona {
+  position: relative;
+  margin-right: 50%;
 }
 section.equipo div.equipo-inner div.personas div.persona div.img img {
-  width: 313px;
-  height: 366px;
+  width: 220px;
+  height: 285px;
   border-radius: 4px;
-  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+  z-index: 1000;
 }
-section.equipo div.equipo-inner div.personas div.persona div.img div.data {
-  width: 313px;
-  height: 366px;
+section.equipo div.equipo-inner div.personas div.persona div.data {
+  position: absolute;
+  color: white;
+  top: 40px;
+  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+  left: 180px;
+  z-index: 1;
+}
+section.equipo div.equipo-inner div.personas div.persona h5 {
+  color: #85CB33;
+  line-height: 130%;
+  margin-left: 62px;
+}
+section.equipo div.equipo-inner div.personas div.persona p.description {
+  color: #005377;
+  font-weight: 600;
+  line-height: 105%;
+  margin-bottom: 19px;
+  width: 189px;
+  height: 34px;
+}
+section.equipo div.equipo-inner div.personas div.persona p {
+  color: #373737;
+  margin-left: 62px;
+  margin-right: 62px;
+  width: 189px;
+  height: 165px;
+}
+section.equipo div.equipo-inner div.personas div.persona div.rrss {
+  display: flex;
+}
+section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
+  width: 20px;
+  height: 20px;
+  margin-left: 65px;
+  margin-right: -55px;
 }

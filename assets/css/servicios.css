@@ -20,6 +20,7 @@ h2 {
   font-size: 38px;
   line-height: 105%;
   font-weight: 700;
+  color: #005377;
 }
 
 h3 {
@@ -97,11 +98,11 @@ section.servicios div.servicios-inner h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
+  margin-bottom: 40px;
   padding: 6%;
 }
 section.servicios div.servicios-inner div.items {
   display: flex;
-  width: 100%;
 }
 section.servicios div.servicios-inner div.items div.item {
   background-color: #F7FCF9;
@@ -110,9 +111,10 @@ section.servicios div.servicios-inner div.items div.item {
   border-radius: 6px;
   width: 340px;
   height: 333px;
+  margin-bottom: 75px;
 }
 section.servicios div.servicios-inner div.items div.item div.header {
-  margin-left: 10%;
+  margin-left: 39px;
   width: 268%;
   display: flex;
   align-items: center;
@@ -124,7 +126,8 @@ section.servicios div.servicios-inner div.items div.item div.header img {
 }
 section.servicios div.servicios-inner div.items div.item div.header h5 {
   color: #005377;
-  width: 95%;
+  display: flex;
+  width: 200px;
 }
 section.servicios div.servicios-inner div.items div.item div.checks {
   margin-left: 15%;
