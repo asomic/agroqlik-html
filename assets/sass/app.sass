@@ -82,65 +82,546 @@ a
 
 // Cuando es igual o menor a 1200px resolucion
 @media (max-width: 1200px)
-    section.hero
-        div.hero-inner
+    header
+        .header-inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 48px
+            .logo                
+                img
+                    width: 149px
+
+            .buttons
+                button
+                    &.left
+                        margin-left: 5px
+
+
+    .hero
+        width: 100%
+        background-image: url('../images/back-lines-1.png')
+        background-position: top
+        background-size: cover
+        background-repeat: no-repeat
+        background-origin: border-box
+        .hero-inner
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            width: 40%
+            margin-left: auto
+            margin-right: auto
+            margin-top: 8%
+            padding-bottom: 6%
             h1 
+                font-weight: 700
+                margin-bottom: 26px  
+                text-align: center
+                color: $blue
             p
-            a.button
+                width: 100%
+                text-align: center
+                font-size: 16px
+                margin-bottom: 26px
 
+    .presentacion
+        background-image: url('../images/campo-4.jpg')
+        background-position: center
+        background-size: cover
+        display: flex
+        justify-content: flex-end
+        .card
+            background-color: $light-green         
+            width: 30%
+            padding: 50px 45px
+            margin:
+                top: 61px
+                bottom: 90px
+            border-radius: 4px
+            h2
+                font-weight: 700
+                margin-bottom: 32px  
+                color: $blue
+            .item
+                width: 100%
+                margin-bottom: 1.8em
+                &:last-child
+                    margin-bottom: 0
+                .title
+                    width: 100%
+                    display: flex
+                    flex-wrap: no-wrap
+                    align-items: center
+                    margin-bottom: 15px
+                    box-sizing: border-box
+                    img
+                        width: 30px
+                        height: 100%
+                        margin-right: 14px       
+                    h5
+                        font-weight: 700
+                        width: 100%         
 
-
-
-
-
-
-
-       
-  
-
-
-
-
-            
-                      
+    .the-app
+        background-image: url('../images/back-lines-2.png')
+        background-size: cover
+        display: flex
+        justify-content: flex-start
+        width: 580px
+        height: 584px
+        margin-bottom: 160px
+        .the-app-inner   
+            display: flex
+            margin-left: 29px
+            margin-top: 81px                 
+            .img
+                margin-right: 180px        
+                img 
+                    width: 402px   
+                    height: 587px                    
+        .data  
+            widht: 433px
+            margin-right: 175px
+            margin-top: 99px
+            h3                 
+                color: $blue                
+            .items 
+                width: 433px  
+                margin-top: 23px                              
+                .item
+                    margin-bottom: -12px
+                    display: flex 
+                    align-items: center
+                    img  
+                        width: 20px 
+                        height: 15px                                              
+                        p                                                                           
+            .buttons
+                display: flex  
+                flex-wrap: wrap 
+                margin-top: 5%                          
+                a                          
+                    img
+                        height: 46px
+                        margin-left: 15px
                         
-                       
-                
-               
-             
-               
-                
-
-               
-                                
-                
-        
-                                                  
-            
-
-            
-                    
-                   
-                                                                                     
-                
-               
-                  
-                 
                             
-                                            
+                        
+    .the-webapp 
+        background-image: url('../images/back-lines-3.png')
+        background-size: cover
+        .the-webapp-inner
+            display: flex   
+            align-content: center  
 
+            .data   
+                align-content: center  
+                width: 407px
+                height: 314px 
+                margin-left: 175px                     
+                h3 
+                    width: 407px
+                    height: 113px
+                    color: $blue                                                               
+                .checks
+                    margin-bottom: 13px                     
+                    .check                                     
+                        display: flex 
+                        align-items: center
+                        img
+                            width: 20px 
+                            height: 15px  
+                        p
+                            margin-bottom: 5px                     
+            .img                             
+                img
+                    width: 596px
+                    height: 443px
+                    margin-right: 128px
+                    
 
-         
+    .servicios
+        background-image: url('../images/campo-3.jpg')
+        background-position: center
+        background-size: cover
+        display: flex
+        justify-content: center
+        .servicios-inner  
+            margin-left: auto
+            margin-right: auto             
+            h2
+                color: $light-green
+                font-weight: 700                    
+                text-align: center
+                width: 50%
+                margin-left: auto
+                margin-right: auto
+                margin-top: 2%
+                margin-bottom: 40px
+                padding: 6%        
+            .items
+                display: flex                                             
+                .item
+                    background-color: $light-green     
+                    margin: 1%              
+                    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3)                    
+                    border-radius: 6px               
+                    width: 340px
+                    height: 333px
+                    margin-bottom: 75px 
+                            
+                    .header  
+                        margin-left: 39px                 
+                        width: 268%
+                        display: flex                  
+                        align-items: center                   
+                        img 
+                            width: 5%
+                            height: 45px
+                            margin-right: 2%                                     
+                        h5   
+                            color: $blue                       
+                            display: flex
+                            width: 200px                                                         
+                    .checks                   
+                        margin-left: 15%                           
+                        .check  
+                            display: flex
+                            img
+                                width: 20px 
+                                height: 17px  
+                                margin-right: 1%                                          
         
+                            p
+                                margin: 5px
+                            
+
+    .equipo
+        .equipo-inner
+            margin-left: auto
+            margin-right: auto
+            img.hoja  
+                position: absolute
+                width: 147.95px
+                height: 150px
+                margin-left: 450px
+                margin-top: -30px
+            h2
+                position: relative
+                color: $blue   
+                font-weight: 700            
+                width: 509px
+                height: 93px
+                margin-top: 141px
+                margin-left: 350px
+                margin-right: 566px
+                line-height: 120%  
+                
+            .personas
+                display: flex
+                margin: 20px 
+                .persona
+                    position: relative
+                    margin-right: 450px
+                    .img                                    
+                        img 
+                            // margin-left: 111px
+                            // margin-top: 53px  
+                            width: 220px
+                            height: 285px
+                            border-radius: 4px
+                            z-index: 1000
+                    .data
+                        position: absolute
+                        color: white 
+                        top: 40px
+                        // width: 313px
+                        // height: 366px 
+                        box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
+                        left: 180px
+                        // margin-top: 71px
+                        z-index: 1
+                    h5
+                        color: $green
+                        line-height: 130%
+                        margin-left: 62px
+                    p.description
+                        color: $blue
+                        font-weight: 600                    
+                        line-height: 105%
+                        margin-bottom: 19px
+                        width: 189px
+                        height: 34px
+                    p
+                        color: $dark
+                        margin-left: 62px
+                        margin-right: 62px
+                        width: 189px
+                        height: 165px   
+                    .rrss
+                        display: flex                   
+                        a
+                            img                       
+                                width: 20px
+                                height: 20px
+                                margin-left: 65px
+                                margin-right: -55px
+
+    .planes-wrapper      
+        background-image: url('../images/back-lines-2.png')  
+        background-size: cover
+        .planes-inner
+            h2
+                color: $green
+                text-align: center
+                margin-top: 121px
+                span
+                    color: $blue                
+            .items
+                display: flex         
+                .item
+                    background-color: white        
+                    width: 340px
+                    height: 542px
+                    margin: 1%                    
+                    .header                    
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        img
+                            width: 24px
+                            height: 24px 
+                            margin-right: 5%     
+                        h3
+                            font-weight: 700
+                            margin-bottom: 32px  
+                            color: $blue      
+                    .checks
+                        margin-left: 36px
+                        margin-right:  36px
+                        .check
+                            display: flex                             
+                            img
+                                width: 20px
+                                height: 10%
+                                margin-right: 14px
+                                margin-bottom: 50px  
+                            p
+                                margin-top: -5px      
+                    h4
+                        color: $blue
+                        margin-left: 30%
+                        margin-top: 20px                                                        
+                        a.button 
+                            margin-left: 23%
+                        
+
+    .testimonio      
+        background-image: url('../images/campo-1.jpg')
+        background-position: center
+        background-size: cover
+        .testimonio-inner
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            width: 40%
+            margin-left: auto
+            margin-right: auto
+            margin-top: 15%
+            padding-bottom: 6% 
+            .item 
+                text-align: center
+                .img  
+                    
+                    img
+                        margin-top: 125px
+                        border-radius: 150px
+                        width: 30%
+                        height: 108px     
+                h4              
+                    color: white                
+                    width: 378px
+                    height: 96px
+                    text-align: center
+                
+                h6
+                    color: white              
+                    text-align: center
+                    margin-bottom: -15px
+                    margin-top: -15px
+                p
+                    color: white
+                    text-align: center               
+                            
+    .hectareas //Falta imagen de la hoja 
+        background-image: url('../images/back-lines-3.png')
+        background-size: 100%  
+        text-align: center  
+        margin-top: 5%    
+        .hectarea.inner  
+            img.hoja
+                position: absolute
+                margin-top: -60px
+                width: 140px
+                height: 150px
+                left: 625px
+            h2   
+                position: relative         
+                color: $blue          
+        .items
+            display: flex
+            justify-content: center  
+            margin-top: 58 px
+            .item
+                background-color: white
+                width: 180px
+                height: 178px
+                margin-right: 4%
+                text-align: center
+                align-items: center
+                margin-top: 2% 
+            
+                img
+                    margin-top: 30px
+                    width: 45px
+                    height: 48px
+                h5
+                p
+                    margin-top: -15%
+                    font-weight: 700  
+            .itemm 
+                background-color: white
+                width: 180px
+                height: 178px
+                margin-right: 4%
+                text-align: center
+                align-items: center    
+                img
+                    margin-top: 30px
+                    width: 45px
+                    height: 48px
+                h5
+                p
+                    margin-top: -20%
+                    font-weight: 700  
+
+    .cta
+        background-image: url('../images/campo-2.jpg')   
+        background-size: cover            
+        .cta-inner
+            height: 497px       
+            text-align: center         
+            h1
+            
+                color: white  
+                padding-top: 182px
+                margin-bottom: 32px
+                line-height: 120%   
+                margin-left: 300px
+                margin-right: 300px 
+                        
+            a.button
+                &::after
+                    color: white
+            
+
+    footer
+        
+        background-color: $green
+        height: 215px
+        .footer-inner
+            .datos-wrapper
+                display: flex
+                .item
+                    margin-top: 51px
+                    margin-left: 107px               
+                    img
+                        width: 136px
+                        height: 38px
+                        margin-right: 204px
+                        
+                .item
+                
+                    p
+                        color: white
+                        margin-right: 75px                 
+                        strong
+                        a
+                            color: white
+                .item
+                    p
+                        strong
+                        a
+                .item
+                    
+                    p  
+                                        
+                        strong
+                        a
+            .creditos
+                text-align: center
+                color: white
+                p
+                    img
+        
+        
+
+                            
+
+
+
+
+
+
+
+
+            
+        
+
+
 
 
                     
+                            
+                                
+                            
+                    
+                
+                
+                
+                    
 
-               
+                
+                                    
+                    
+            
+                                                    
+                
 
-        
+                
+                        
+                    
+                                                                                        
+                    
+                
+                    
+                    
+                                
+                                                
+
+
             
             
+
+
+                        
+
+                
+
+            
+                
+                
 
 
 
