@@ -112,13 +112,8 @@ section.the-webapp div.the-webapp-inner div.data div.checks div.check img {
 section.the-webapp div.the-webapp-inner div.data div.checks div.check p {
   margin-bottom: 5px;
 }
-section.the-webapp div.the-webapp-inner div.img {
-  margin-left: 114px;
-  margin-bottom: 67px;
-  margin-right: 128px;
-}
 section.the-webapp div.the-webapp-inner div.img img {
-  width: 596;
+  width: 596px;
   height: 443px;
   margin-right: 128px;
 }

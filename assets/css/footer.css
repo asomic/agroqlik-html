@@ -78,3 +78,31 @@ a {
   padding-left: 112px;
   padding-right: 112px;
 }
+
+footer {
+  background-color: #85CB33;
+  height: 215px;
+}
+footer div.footer-inner div.datos-wrapper {
+  display: flex;
+}
+footer div.footer-inner div.datos-wrapper div.item {
+  margin-top: 51px;
+  margin-left: 107px;
+}
+footer div.footer-inner div.datos-wrapper div.item img {
+  width: 136px;
+  height: 38px;
+  margin-right: 204px;
+}
+footer div.footer-inner div.datos-wrapper div.item p {
+  color: white;
+  margin-right: 75px;
+}
+footer div.footer-inner div.datos-wrapper div.item p a {
+  color: white;
+}
+footer div.footer-inner div.creditos {
+  text-align: center;
+  color: white;
+}

@@ -85,22 +85,21 @@ section.hectareas {
   text-align: center;
   margin-top: 5%;
 }
-section.hectareas div {
-  color: #005377;
-}
 section.hectareas div img.hoja {
   position: absolute;
   margin-top: -60px;
   width: 140px;
   height: 150px;
+  left: 625px;
 }
 section.hectareas div h2 {
   position: relative;
+  color: #005377;
 }
 section.hectareas div.items {
   display: flex;
-  margin-left: 15%;
-  margin-top: 7%;
+  justify-content: center;
+  margin-top: 58 px;
 }
 section.hectareas div.items div.item {
   background-color: white;

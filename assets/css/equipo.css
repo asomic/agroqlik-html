@@ -87,7 +87,7 @@ section.equipo div.equipo-inner img.hoja {
   position: absolute;
   width: 147.95px;
   height: 150px;
-  margin-left: 700px;
+  margin-left: 450px;
   margin-top: -30px;
 }
 section.equipo div.equipo-inner h2 {
@@ -96,8 +96,8 @@ section.equipo div.equipo-inner h2 {
   font-weight: 700;
   width: 509px;
   height: 93px;
-  margin-top: 200px;
-  margin-left: 566px;
+  margin-top: 141px;
+  margin-left: 350px;
   margin-right: 566px;
   line-height: 120%;
 }
@@ -107,7 +107,7 @@ section.equipo div.equipo-inner div.personas {
 }
 section.equipo div.equipo-inner div.personas div.persona {
   position: relative;
-  margin-right: 50%;
+  margin-right: 450px;
 }
 section.equipo div.equipo-inner div.personas div.persona div.img img {
   width: 220px;

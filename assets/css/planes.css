@@ -83,10 +83,6 @@ section.planes-wrapper {
   background-image: url("../images/back-lines-2.png");
   background-size: cover;
 }
-section.planes-wrapper div.planes-inner {
-  margin-left: 10%;
-  margin-right: auto;
-}
 section.planes-wrapper div.planes-inner h2 {
   color: #85CB33;
   text-align: center;
@@ -120,8 +116,8 @@ section.planes-wrapper div.planes-inner div.items div.item div.header h3 {
   color: #005377;
 }
 section.planes-wrapper div.planes-inner div.items div.item div.checks {
-  padding: 5%;
-  width: 90%;
+  margin-left: 36px;
+  margin-right: 36px;
 }
 section.planes-wrapper div.planes-inner div.items div.item div.checks div.check {
   display: flex;
@@ -140,6 +136,6 @@ section.planes-wrapper div.planes-inner div.items div.item h4 {
   margin-left: 30%;
   margin-top: 20px;
 }
-section.planes-wrapper div.planes-inner div.items div.item a.button:last-child {
-  margin-left: 20%;
+section.planes-wrapper div.planes-inner div.items div.item div a.button {
+  margin-left: 23%;
 }
