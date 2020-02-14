@@ -123,3 +123,39 @@ section.presentacion div.card div.item div.title h5 {
   font-weight: 700;
   width: 100%;
 }
+
+@media (max-width: 400px) {
+  .presentacion .card.card {
+    width: 200%;
+    margin-right: -50%;
+  }
+  .presentacion .card h2 {
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #005377;
+  }
+  .presentacion .card .item {
+    width: 100%;
+    margin-bottom: 1.8em;
+  }
+  .presentacion .card .item:last-child {
+    margin-bottom: 0;
+  }
+  .presentacion .card .item .title {
+    width: 100%;
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  .presentacion .card .item .title img {
+    width: 30px;
+    height: 100%;
+    margin-right: 14px;
+  }
+  .presentacion .card .item .title h5 {
+    font-weight: 700;
+    width: 100%;
+  }
+}

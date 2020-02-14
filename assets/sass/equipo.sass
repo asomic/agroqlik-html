@@ -1,8 +1,7 @@
 @import app
 section.equipo
     div.equipo-inner
-        margin-left: auto
-        margin-right: auto
+      
         img.hoja  
             position: absolute
             width: 147.95px
@@ -69,12 +68,83 @@ section.equipo
                             height: 20px
                             margin-left: 65px
                             margin-right: -55px
+                            
                     
-        
-                           
+@media (max-width: 400px)
+    .equipo    
+        .equipo-inner
+            img.hoja  
+                display: inlinre
+                position: absolute
+                width: 147px
+                height: 150px
+                margin-left: -1px
+                margin-top: -30px
+
+            h2                
+                position: relative
+                color: $blue   
+                font-weight: 700 
+                margin-top: 130px
+                margin-left: -100px
+                line-height: 120%  
+            
+            
+            .personas
+                display: inline
+                margin: 20px 
+                .persona                
+                    position: relative
+                    margin-left: -30px
+                    margin-bottom: 10px
+                    .img                                                            
+                        img 
+                            // margin-left: 111px
+                            // margin-top: 53px  
+                            width: 220px
+                            height: 285px
+                            border-radius: 4px
+                            z-index: 1000                      
+                    .data  
                     
-
-                       
-
-
-       
+                        position: absolute
+                        color: white 
+                        top: 300px
+                        // width: 313px
+                        // height: 366px 
+                        box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
+                        margin-left: -220px
+                        
+                        // margin-top: 71px
+                        z-index: 1
+                    h5
+                        color: $green
+                        line-height: 130%
+                        margin-left: 62px
+                    p.description
+                        color: $blue
+                        font-weight: 600                    
+                        line-height: 105%
+                        margin-bottom: 19px
+                        width: 189px
+                        height: 34px
+                    p
+                        color: $dark
+                        margin-left: 62px
+                        margin-right: 62px
+                        width: 189px
+                        height: 165px   
+                        .persona
+                    position: relative
+                    margin-left: -30px
+                    margin-bottom: 120px            
+                    
+                    .rrss
+                                
+                        a
+                            img                       
+                                width: 20px
+                                height: 20px
+                                margin-left: 65px
+                                margin-right: -55px
+             

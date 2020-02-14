@@ -91,51 +91,12 @@ header div.header-inner a.logo img {
 header div.header-inner div.buttons a.button.left {
   margin-left: 5px;
 }
-@media (max-width: 2600px) {
-  header .header-inner {
+@media (max-width: 400px) {
+  header .header-inner .logo img {
+    margin-left: -80px;
+  }
+  header .header-inner .buttons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 48px;
-  }
-}
-@media (max-width: 2400px) {
-  header .header-inner {
-    background-color: pink;
-  }
-}
-@media (max-width: 2200px) {
-  header .header-inner {
-    background-color: violet;
-  }
-}
-@media (max-width: 2000px) {
-  header .header-inner {
-    background-color: brown;
-  }
-}
-@media (max-width: 1500px) {
-  header .header-inner {
-    background-color: purple;
-  }
-}
-@media (max-width: 1200px) {
-  header .header-inner {
-    background-color: #85CB33;
-  }
-}
-@media (max-width: 900px) {
-  header .header-inner {
-    background-color: orange;
-  }
-}
-@media (max-width: 600px) {
-  header .header-inner {
-    background-color: #005377;
-  }
-}
-@media (max-width: 300px) {
-  header .header-inner {
-    background-color: yellow;
+    margin-left: 15px;
   }
 }

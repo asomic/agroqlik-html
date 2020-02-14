@@ -139,3 +139,59 @@ section.planes-wrapper div.planes-inner div.items div.item h4 {
 section.planes-wrapper div.planes-inner div.items div.item div a.button {
   margin-left: 23%;
 }
+
+@media (max-width: 400px) {
+  .planes-wrappe {
+    background-image: url("../images/back-lines-2.png");
+    background-size: cover;
+  }
+  .planes-wrappe .planes-inner h2 {
+    color: #85CB33;
+    text-align: center;
+    margin-top: 121px;
+  }
+  .planes-wrappe .planes-inner h2 span {
+    color: #005377;
+  }
+  .planes-wrappe .planes-inner .items .item {
+    background-color: white;
+    width: 340px;
+    height: 542px;
+    margin: 1%;
+  }
+  .planes-wrappe .planes-inner .items .item .header {
+    align-items: center;
+    justify-content: center;
+  }
+  .planes-wrappe .planes-inner .items .item .header img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5%;
+  }
+  .planes-wrappe .planes-inner .items .item .header h3 {
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #005377;
+  }
+  .planes-wrappe .planes-inner .items .item .checks {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  .planes-wrappe .planes-inner .items .item .checks .check img {
+    width: 20px;
+    height: 10%;
+    margin-right: 14px;
+    margin-bottom: 50px;
+  }
+  .planes-wrappe .planes-inner .items .item .checks .check p {
+    margin-top: -5px;
+  }
+  .planes-wrappe .planes-inner .items .item h4 {
+    color: #005377;
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+  .planes-wrappe .planes-inner .items .item h4 a.button {
+    margin-left: 23%;
+  }
+}
