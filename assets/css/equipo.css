@@ -109,7 +109,6 @@ section.equipo div.equipo-inner div.personas div.persona div.img img {
   width: 220px;
   height: 285px;
   border-radius: 4px;
-  z-index: 1000;
 }
 section.equipo div.equipo-inner div.personas div.persona div.data {
   position: absolute;
@@ -117,7 +116,6 @@ section.equipo div.equipo-inner div.personas div.persona div.data {
   top: 40px;
   box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
   left: 180px;
-  z-index: 1;
 }
 section.equipo div.equipo-inner div.personas div.persona h5 {
   color: #85CB33;
@@ -147,75 +145,4 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   height: 20px;
   margin-left: 65px;
   margin-right: -55px;
-}
-
-@media (max-width: 400px) {
-  .equipo .equipo-inner img.hoja {
-    display: inlinre;
-    position: absolute;
-    width: 147px;
-    height: 150px;
-    margin-left: -1px;
-    margin-top: -30px;
-  }
-  .equipo .equipo-inner h2 {
-    position: relative;
-    color: #005377;
-    font-weight: 700;
-    margin-top: 130px;
-    margin-left: -100px;
-    line-height: 120%;
-  }
-  .equipo .equipo-inner .personas {
-    display: inline;
-    margin: 20px;
-  }
-  .equipo .equipo-inner .personas .persona {
-    position: relative;
-    margin-left: -30px;
-    margin-bottom: 10px;
-    position: relative;
-    margin-left: -30px;
-    margin-bottom: 120px;
-  }
-  .equipo .equipo-inner .personas .persona .img img {
-    width: 220px;
-    height: 285px;
-    border-radius: 4px;
-    z-index: 1000;
-  }
-  .equipo .equipo-inner .personas .persona .data {
-    position: absolute;
-    color: white;
-    top: 300px;
-    box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
-    margin-left: -220px;
-    z-index: 1;
-  }
-  .equipo .equipo-inner .personas .persona h5 {
-    color: #85CB33;
-    line-height: 130%;
-    margin-left: 62px;
-  }
-  .equipo .equipo-inner .personas .persona p.description {
-    color: #005377;
-    font-weight: 600;
-    line-height: 105%;
-    margin-bottom: 19px;
-    width: 189px;
-    height: 34px;
-  }
-  .equipo .equipo-inner .personas .persona p {
-    color: #373737;
-    margin-left: 62px;
-    margin-right: 62px;
-    width: 189px;
-    height: 165px;
-  }
-  .equipo .equipo-inner .personas .persona .rrss a img {
-    width: 20px;
-    height: 20px;
-    margin-left: 65px;
-    margin-right: -55px;
-  }
 }

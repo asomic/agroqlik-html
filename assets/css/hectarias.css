@@ -80,8 +80,6 @@ a {
 }
 
 section.hectareas {
-  background-image: url("../images/back-lines-3.png");
-  background-size: 100%;
   text-align: center;
   margin-top: 5%;
 }
@@ -99,7 +97,7 @@ section.hectareas div h2 {
 section.hectareas div.items {
   display: flex;
   justify-content: center;
-  margin-top: 58 px;
+  margin-top: 90px;
 }
 section.hectareas div.items div.item {
   background-color: white;
