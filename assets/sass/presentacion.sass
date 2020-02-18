@@ -39,25 +39,31 @@ section.presentacion
 
 
 
-@media (max-width: 400px)
-    .presentacion        
-                    
-        .card  
-            &.card
-                width: 200%
-                margin-right: -50%
+@media (max-width: 425px)
+    section.presentacion
+        background-image: url('../images/campo-4.jpg')
+        background-position: center
+        background-size: cover
+        display: flex
+        justify-content: center
+        div.card
+            background-color: $light-green         
+            width: 109%
+            padding: 10px 53px
+            margin:
+                top: 61px
+                bottom: 90px
+            border-radius: 4px
             h2
-                
                 font-weight: 700
                 margin-bottom: 32px  
                 color: $blue
-                
-            .item
+            div.item
                 width: 100%
                 margin-bottom: 1.8em
                 &:last-child
                     margin-bottom: 0
-                .title
+                div.title
                     width: 100%
                     display: flex
                     flex-wrap: no-wrap
@@ -71,3 +77,60 @@ section.presentacion
                     h5
                         font-weight: 700
                         width: 100%         
+//     .presentacion
+//         .card          
+//             h2               
+//                 font-weight: 700
+//                 margin-bottom: 32px  
+//                 color: $blue
+               
+                
+//             .item
+//                 width: 100%
+//                 margin-bottom: 1.8em
+//                 &:last-child
+//                     margin-bottom: 0
+//                 .title
+//                     width: 100%
+//                     display: flex
+//                     flex-wrap: no-wrap
+//                     align-items: center
+//                     margin-bottom: 15px
+//                     box-sizing: border-box
+//                     img
+//                         width: 30px
+//                         height: 100%
+//                         margin-right: 14px       
+//                     h5
+//                         font-weight: 700
+//                         width: 100%         
+
+
+//     @media (max-width: 768px)
+//         .presentacion   
+//             .card                                        
+//                 width: 77%   
+//                 h2
+//                     font-weight: 700
+//                     margin-bottom: 32px  
+//                     color: $blue
+                    
+//                 .item
+//                     width: 100%
+//                     margin-bottom: 1.8em
+//                     &:last-child
+//                         margin-bottom: 0
+//                     .title
+//                         width: 100%
+//                         display: flex
+//                         flex-wrap: no-wrap
+//                         align-items: center
+//                         margin-bottom: 15px
+//                         box-sizing: border-box
+//                         img
+//                             width: 30px
+//                             height: 100%
+//                             margin-right: 14px       
+//                         h5
+//                             font-weight: 700
+//                             width: 100% 

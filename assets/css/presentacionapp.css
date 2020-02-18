@@ -131,7 +131,7 @@ section.the-app div.the-app-inner div.data div.buttons a img {
   margin-left: 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   section.the-app div.the-app-inner div.img {
     margin-right: 180px;
   }
@@ -154,7 +154,61 @@ section.the-app div.the-app-inner div.data div.buttons a img {
   }
   section.the-app div.the-app-inner div.data h3 {
     color: #005377;
-    margin-right: 100px;
+    margin-right: 19px;
+    margin-left: auto;
+  }
+  section.the-app div.the-app-inner div.data div.items {
+    width: 433px;
+    margin-top: 23px;
+  }
+  section.the-app div.the-app-inner div.data div.items.items {
+    margin-left: 20px;
+  }
+  section.the-app div.the-app-inner div.data div.items div.item {
+    margin-bottom: -12px;
+    display: flex;
+    align-items: center;
+  }
+  section.the-app div.the-app-inner div.data div.items div.item img {
+    width: 20px;
+    height: 15px;
+  }
+  section.the-app div.the-app-inner div.data div.buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.the-app div.the-app-inner div.data div.buttons a {
+    margin-left: 30;
+  }
+  section.the-app div.the-app-inner div.data div.buttons a img {
+    height: 46px;
+  }
+}
+@media (max-width: 786px) {
+  section.the-app div.the-app-inner div.img {
+    margin-right: 180px;
+  }
+  section.the-app div.the-app-inner div.img.img {
+    margin-left: -150px;
+  }
+  section.the-app div.the-app-inner div.img img {
+    width: 402px;
+    height: 587px;
+  }
+  section.the-app div.the-app-inner div.data {
+    widht: 433px;
+    margin-right: 175px;
+    margin-top: 99px;
+  }
+  section.the-app div.the-app-inner div.data.data {
+    margin-left: -640px;
+    padding: 15%;
+    margin-top: 470px;
+  }
+  section.the-app div.the-app-inner div.data h3 {
+    color: #005377;
+    margin-right: 19px;
+    margin-left: auto;
   }
   section.the-app div.the-app-inner div.data div.items {
     width: 433px;

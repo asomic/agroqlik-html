@@ -7,6 +7,7 @@ section.equipo
             height: 150px
             margin-left: 450px
             margin-top: -30px
+            
         h2
             position: relative
             color: $blue   
@@ -23,7 +24,7 @@ section.equipo
             margin: 20px 
             div.persona
                 position: relative
-                margin-right: 450px
+                margin-right: 350px
                 div.img                                    
                     img 
                         // margin-left: 111px
@@ -35,13 +36,12 @@ section.equipo
                 div.data
                     position: absolute
                     color: white 
-                    top: 40px
+                    top: 40px 
                     // width: 313px
                     // height: 366px 
                     box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
                     left: 180px
-                    // margin-top: 71px
-               
+                    // margin-top: 71px               
                 h5
                     color: $green
                     line-height: 130%
@@ -69,3 +69,73 @@ section.equipo
                             margin-right: -55px
                             
                     
+@media ( max-width: 425px )
+    section.equipo        
+        div.equipo-inner 
+            height:  900px     
+            img.hoja  
+                position: absolute
+                width: 147.95px
+                height: 150px
+                margin-left: 0px
+                margin-top: -11px                
+            h2
+                position: relative
+                color: $blue   
+                font-weight: 700            
+                width: 350px
+                height: 131px
+                margin-top: 63px
+                margin-left: -58px          
+                line-height: 120%          
+            div.personas
+                display: block
+                margin: 20px 
+                div.persona
+                    position: relative
+                    margin-right: 450px
+                    margin-left: -109px
+                    div.img                                                        
+                        img 
+                            // margin-left: 111px
+                            // margin-top: 53px  
+                            width: 163px
+                            height: 201px
+                            border-radius: 4px
+                            margin-bottom: 174px
+                            margin-left: -19px                        
+                    div.data  
+                        margin-left: 59px
+                        width: 272px                   
+                        position: absolute
+                        color: white 
+                        top: 10px                      
+                        box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
+                        left: 44px
+                    h5
+                        color: $green
+                        line-height: 130%
+                        margin-left: 65px
+                    p.description
+                        color: $blue
+                        font-weight: 600                    
+                        line-height: 105%
+                        margin-bottom: 19px
+                        width: 189px
+                        height: 34px
+                    p
+                        color: $dark
+                        margin-left: 56px
+                       
+                        width: 189px
+                        height: 165px   
+                    div.rrss
+                        display: flex
+                        margin-left: -10px   
+                        
+                        a
+                            img                       
+                                width: 20px
+                                height: 20px
+                                margin-left: 65px
+                                margin-right: -55px

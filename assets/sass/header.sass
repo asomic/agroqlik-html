@@ -1,37 +1,32 @@
 @import app
 header
     div.header-inner
-            display: flex
-            justify-content: space-between
-            align-items: center
-            margin-top: 48px
-            a.logo                
+        width: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 48px
+        a.logo                
+            img
+                width: 149px
+        div.buttons
+            a.button
+                
+                &.left
+                    margin-left: 5px                  
+
+
+   
+
+    @media (max-width: 768px)
+        .header-inner
+            .logo
                 img
-                    width: 149px
-
-            div.buttons
-                a.button
-                    &.left
-                        margin-left: 5px                  
-
-
-    // @media (min-width: 1024px)
-    //     .header-inner
-    //         .logo
-    //             img
-    //         .buttons
-    //             button
-                   
-
-    // @media (max-width: 768px)
-    //     .header-inner
-    //         .logo
-    //             img
-    //         .buttons
-    //             .button  
+            .buttons
+                .button  
                                   
    
-    @media (max-width: 400px)
+    @media (max-width: 425px)   
         .header-inner          
             .logo   
                            

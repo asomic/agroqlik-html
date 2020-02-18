@@ -80,6 +80,7 @@ a {
 }
 
 header div.header-inner {
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +92,7 @@ header div.header-inner a.logo img {
 header div.header-inner div.buttons a.button.left {
   margin-left: 5px;
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   header .header-inner .logo img {
     margin-left: -80px;
   }

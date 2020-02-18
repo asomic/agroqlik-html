@@ -118,7 +118,7 @@ section.the-webapp div.the-webapp-inner div.img img {
   margin-right: 128px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   section.the-webapp {
     background-image: url("../images/back-lines-3.png");
     background-size: cover;
@@ -139,6 +139,7 @@ section.the-webapp div.the-webapp-inner div.img img {
     height: 113px;
     color: #005377;
     margin-bottom: 50px;
+    margin-top: 0px;
   }
   section.the-webapp div.the-webapp-inner div.data div.checks {
     margin-bottom: 15px;
@@ -155,9 +156,9 @@ section.the-webapp div.the-webapp-inner div.img img {
     margin-bottom: 5px;
   }
   section.the-webapp div.the-webapp-inner div.img img {
-    margin-left: -450px;
+    margin-left: -430px;
     height: 443px;
     width: 443px;
-    margin-top: 750px;
+    margin-top: 700px;
   }
 }

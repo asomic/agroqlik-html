@@ -103,7 +103,7 @@ section.equipo div.equipo-inner div.personas {
 }
 section.equipo div.equipo-inner div.personas div.persona {
   position: relative;
-  margin-right: 450px;
+  margin-right: 350px;
 }
 section.equipo div.equipo-inner div.personas div.persona div.img img {
   width: 220px;
@@ -145,4 +145,81 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   height: 20px;
   margin-left: 65px;
   margin-right: -55px;
+}
+
+@media (max-width: 425px) {
+  section.equipo div.equipo-inner {
+    height: 900px;
+  }
+  section.equipo div.equipo-inner img.hoja {
+    position: absolute;
+    width: 147.95px;
+    height: 150px;
+    margin-left: 0px;
+    margin-top: -11px;
+  }
+  section.equipo div.equipo-inner h2 {
+    position: relative;
+    color: #005377;
+    font-weight: 700;
+    width: 350px;
+    height: 131px;
+    margin-top: 63px;
+    margin-left: -58px;
+    line-height: 120%;
+  }
+  section.equipo div.equipo-inner div.personas {
+    display: block;
+    margin: 20px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona {
+    position: relative;
+    margin-right: 450px;
+    margin-left: -109px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.img img {
+    width: 163px;
+    height: 201px;
+    border-radius: 4px;
+    margin-bottom: 174px;
+    margin-left: -19px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.data {
+    margin-left: 59px;
+    width: 272px;
+    position: absolute;
+    color: white;
+    top: 10px;
+    box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+    left: 44px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona h5 {
+    color: #85CB33;
+    line-height: 130%;
+    margin-left: 65px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona p.description {
+    color: #005377;
+    font-weight: 600;
+    line-height: 105%;
+    margin-bottom: 19px;
+    width: 189px;
+    height: 34px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona p {
+    color: #373737;
+    margin-left: 56px;
+    width: 189px;
+    height: 165px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.rrss {
+    display: flex;
+    margin-left: -10px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 65px;
+    margin-right: -55px;
+  }
 }

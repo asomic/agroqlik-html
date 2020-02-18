@@ -134,3 +134,175 @@ section.hectareas div.items div.itemm p {
   margin-top: -20%;
   font-weight: 700;
 }
+
+@media (max-width: 425px) {
+  section.hectareas {
+    text-align: center;
+    margin-top: 5%;
+  }
+  section.hectareas div img.hoja {
+    position: absolute;
+    margin-top: 32px;
+    width: 140px;
+    height: 147px;
+    left: 140px;
+  }
+  section.hectareas div h2 {
+    position: relative;
+    color: #005377;
+  }
+  section.hectareas div.items {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  section.hectareas div.items div.item {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+    margin-top: 6%;
+  }
+  section.hectareas div.items div.item img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.item p {
+    margin-top: -15%;
+    font-weight: 700;
+  }
+  section.hectareas div.items div.itemm {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+  }
+  section.hectareas div.items div.itemm img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.itemm p {
+    margin-top: -20%;
+    font-weight: 700;
+  }
+}
+@media (max-width: 425px) {
+  section.hectareas {
+    text-align: center;
+    margin-top: 5%;
+  }
+  section.hectareas div img.hoja {
+    position: absolute;
+    margin-top: 32px;
+    width: 140px;
+    height: 147px;
+    left: 140px;
+  }
+  section.hectareas div h2 {
+    position: relative;
+    color: #005377;
+  }
+  section.hectareas div.items {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  section.hectareas div.items div.item {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+    margin-top: 6%;
+  }
+  section.hectareas div.items div.item img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.item p {
+    margin-top: -15%;
+    font-weight: 700;
+  }
+  section.hectareas div.items div.itemm {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+  }
+  section.hectareas div.items div.itemm img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.itemm p {
+    margin-top: -20%;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  section.hectareas {
+    text-align: center;
+    margin-top: 5%;
+  }
+  section.hectareas div img.hoja {
+    position: absolute;
+    margin-top: 32px;
+    width: 140px;
+    height: 147px;
+    left: 140px;
+  }
+  section.hectareas div h2 {
+    position: relative;
+    color: #005377;
+  }
+  section.hectareas div.items {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  section.hectareas div.items div.item {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+    margin-top: 6%;
+  }
+  section.hectareas div.items div.item img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.item p {
+    margin-top: -15%;
+    font-weight: 700;
+  }
+  section.hectareas div.items div.itemm {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+  }
+  section.hectareas div.items div.itemm img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.itemm p {
+    margin-top: -20%;
+    font-weight: 700;
+  }
+}
