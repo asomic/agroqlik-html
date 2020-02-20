@@ -119,3 +119,43 @@ section.testimonio div.testimonio-inner div.item p {
   color: white;
   text-align: center;
 }
+
+@medi (max-width:1920px)and (min-width: 769px);
+section.testimonio div.testimonio-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  padding-bottom: 6%;
+}
+section.testimonio div.testimonio-inner div.item {
+  text-align: center;
+}
+section.testimonio div.testimonio-inner div.item div.img img {
+  margin-top: 125px;
+  border-radius: 150px;
+  width: 58%;
+  height: auto;
+}
+section.testimonio div.testimonio-inner div.item h4 {
+  color: white;
+  width: 378px;
+  height: 96px;
+  text-align: center;
+  font-size: 41px;
+}
+section.testimonio div.testimonio-inner div.item h6 {
+  color: white;
+  text-align: center;
+  margin-bottom: -15px;
+  margin-top: 109px;
+  font-size: 31px;
+}
+section.testimonio div.testimonio-inner div.item p {
+  color: white;
+  text-align: center;
+  font-size: 21px;
+}

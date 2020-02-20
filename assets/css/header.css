@@ -105,3 +105,13 @@ header div.header-inner div.buttons a.button.left {
   }
   /* Tablet */
 }
+/* Screen PC */                   
+@media (max-width: 1920px) and (min-width: 769px) {
+  .header-inner .logo img {
+    width: 248px !important;
+  }
+  .header-inner .buttons .button {
+    width: 100%;
+    font-size: 20px;
+  }
+}

@@ -151,4 +151,20 @@ section.presentacion div.card div.item div.title h5 {
   section.presentacion div.card div.item div.title {
     width: 100%;
   }
+  /* Screen */
+}
+@media (max-width: 1920px) and (min-width: 769px) {
+  section.presentacion div.card {
+    width: 33%;
+    font-size: 27px;
+  }
+  section.presentacion div.card h2 {
+    font-size: 59px;
+  }
+  section.presentacion div.card div.item div.title img {
+    width: 55px;
+  }
+  section.presentacion div.card div.item div.title h5 {
+    font-size: 37px;
+  }
 }

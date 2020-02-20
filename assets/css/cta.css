@@ -118,3 +118,23 @@ section.cta div.cta-inner h1 {
 section.cta div.cta-inner a.button::after {
   color: white;
 }
+
+@media (max-width: 1920px) and (min-width: 769px) {
+  section.cta {
+    background-image: url("../images/campo-2.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  section.cta div.cta-inner {
+    height: 497px;
+    text-align: center;
+  }
+  section.cta div.cta-inner h1 {
+    padding-top: 161px;
+    font-size: 73px;
+  }
+  section.cta div.cta-inner a.button {
+    color: white;
+    font-size: 26px;
+  }
+}
