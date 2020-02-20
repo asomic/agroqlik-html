@@ -147,6 +147,45 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   margin-right: -55px;
 }
 
+@media (max-width: 768px) {
+  section.equipo div.equipo-inner {
+    height: 900px;
+  }
+  section.equipo div.equipo-inner img.hoja {
+    margin-left: 146px;
+    margin-top: -11px;
+  }
+  section.equipo div.equipo-inner h2 {
+    width: 100%;
+    height: 131px;
+    margin-top: 63px;
+    margin-left: 38px;
+  }
+  section.equipo div.equipo-inner div.personas {
+    display: block;
+    margin: 20px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona {
+    position: relative;
+    margin-right: 450px;
+    margin-left: -109px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.img img {
+    width: 163px;
+    height: 201px;
+    margin-bottom: 193px;
+    margin-left: 135px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.data {
+    margin-left: 59px;
+    width: 272px;
+    top: 10px;
+    left: 190px;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.rrss {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 425px) {
   section.equipo div.equipo-inner {
     height: 900px;

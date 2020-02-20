@@ -80,16 +80,15 @@ a {
 }
 
 section.cta {
-  background-image: url("../images/campo-2.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.132) 0%, rgba(0, 0, 0, 0.4) 50.34%, rgba(0, 0, 0, 0.228) 100%), url(back_2.jpg), #589E2F;
   background-size: cover;
 }
 section.cta div.cta-inner {
   height: 497px;
-  text-align: center;
 }
 section.cta div.cta-inner h1 {
   color: white;
-  padding-top: 182px;
+  text-align: center;
   margin-bottom: 32px;
   line-height: 120%;
   margin-left: 300px;
@@ -102,6 +101,7 @@ section.cta div.cta-inner a.button::after {
 section.cta {
   background-image: url("../images/campo-2.jpg");
   background-size: cover;
+  background-position: center;
 }
 section.cta div.cta-inner {
   height: 497px;

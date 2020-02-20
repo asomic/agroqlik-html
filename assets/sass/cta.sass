@@ -1,14 +1,12 @@
 @import app
 section.cta
-    background-image: url('../images/campo-2.jpg')   
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.132) 0%, rgba(0, 0, 0, 0.4) 50.34%, rgba(0, 0, 0, 0.228) 100%),url(back_2.jpg), #589E2F   
     background-size: cover            
     div.cta-inner
-        height: 497px       
-        text-align: center         
-        h1
-           
+        height: 497px   
+        h1           
             color: white  
-            padding-top: 182px
+            text-align: center
             margin-bottom: 32px
             line-height: 120%   
             margin-left: 300px
@@ -22,19 +20,41 @@ section.cta
 @media ( max-width: 425px)
 section.cta
     background-image: url('../images/campo-2.jpg')   
-    background-size: cover            
+    background-size: cover
+    background-position: center            
     div.cta-inner
         height: 497px       
         text-align: center         
         h1
-           
             color: white  
             padding-top: 85px
             margin-bottom: 49px
             line-height: 120%   
             margin-left: 0px
             margin-right: 0px 
-                     
+                        
         a.button
             &::after
                 color: white
+
+
+// @media ( max-width: 613px)
+//     section.cta
+//         background-image: url('../images/campo-2.jpg')   
+//         background-position: center
+//         background-size: cover        
+//         div.cta-inner
+//             height: 497px       
+//             text-align: center         
+//             h1
+            
+//                 color: white  
+//                 padding-top: 126px
+//                 margin-bottom: 49px
+//                 line-height: 120%   
+//                 margin-left: 0px
+//                 margin-right: 0px 
+                        
+//             a.button
+//                 &::after
+//                     color: white
