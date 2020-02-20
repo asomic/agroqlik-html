@@ -131,7 +131,6 @@ section.the-app div.the-app-inner div.data div.buttons {
 section.the-app div.the-app-inner div.data div.buttons a img {
   height: 46px;
   margin-left: 15px;
-  /* Phone*/
 }
 
 @media (max-width: 1920px) and (min-width: 769px) {

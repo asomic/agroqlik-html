@@ -193,7 +193,7 @@ section.the-webapp div.the-webapp-inner div.img img {
 
   /* Phone*/   
 }
-@media (max-width: 768px) and (max-width: 425px) {
+@media (max-width: 425px) {
   section.the-webapp div.the-webapp-inner div.data {
     margin-left: -90px !important;
     margin-top: 380px !important;

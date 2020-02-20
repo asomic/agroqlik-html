@@ -196,7 +196,7 @@ section.hectareas div.items div.itemm p {
     font-weight: 700;
   }
 }
-@media (max-width: 768px) and (max-width: 425px) {
+@media (max-width: 425px) {
   section.hectareas {
     text-align: center;
     margin-top: 5%;
