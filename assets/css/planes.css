@@ -200,6 +200,7 @@ section.planes-wrapper div.planes-inner div.items div.item div a.button {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
