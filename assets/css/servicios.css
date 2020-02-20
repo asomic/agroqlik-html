@@ -175,7 +175,7 @@ section.servicios div.servicios-inner div.items div.item div.checks div.check p 
     height: 34px;
   }
   section.servicios div.servicios-inner div.items div.item div.checks div.check p {
-    font-size: 33px;
+    font-size: 27px;
   }
 }
 @media (max-width: 768px) {
