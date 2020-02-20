@@ -145,70 +145,37 @@ section.servicios div.servicios-inner div.items div.item div.checks div.check p 
 }
 
 @media (max-width: 1920px) {
-  section.servicios {
-    background-image: url("../images/campo-3.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-  }
   section.servicios div.servicios-inner {
-    margin-left: auto;
-    margin-right: auto;
+    height: 1131px;
   }
   section.servicios div.servicios-inner h2 {
-    color: #F7FCF9;
-    font-weight: 700;
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 40px;
-    padding: 6%;
     width: 90%;
+    font-size: 63px;
   }
   section.servicios div.servicios-inner div.items {
-    display: inline;
+    display: flex;
   }
   section.servicios div.servicios-inner div.items div.item {
-    background-color: #F7FCF9;
-    margin: 1%;
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
-    border-radius: 6px;
-    width: 340px;
-    height: 333px;
-    margin-bottom: 75px;
-  }
-  section.servicios div.servicios-inner div.items div.item div.header {
-    margin-left: 39px;
-    width: 268%;
-    display: flex;
-    align-items: center;
+    margin-left: 0px;
+    width: 556px;
+    height: 560px;
+    margin-bottom: 22px;
   }
   section.servicios div.servicios-inner div.items div.item div.header img {
-    width: 5%;
-    height: 45px;
-    margin-right: 2%;
+    height: auto;
   }
   section.servicios div.servicios-inner div.items div.item div.header h5 {
-    color: #005377;
-    display: flex;
-    width: 200px;
+    font-size: 37px;
   }
   section.servicios div.servicios-inner div.items div.item div.checks {
-    margin-left: 15%;
-  }
-  section.servicios div.servicios-inner div.items div.item div.checks div.check {
-    display: flex;
+    margin-left: 11%;
   }
   section.servicios div.servicios-inner div.items div.item div.checks div.check img {
-    width: 20px;
-    height: 17px;
-    margin-right: 1%;
+    width: 43px;
+    height: 34px;
   }
   section.servicios div.servicios-inner div.items div.item div.checks div.check p {
-    margin: 5px;
+    font-size: 33px;
   }
 }
 @media (max-width: 768px) {
