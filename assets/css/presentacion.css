@@ -86,7 +86,6 @@ section.presentacion {
   background-size: cover;
   display: flex;
   justify-content: flex-end;
-  /* Screen */
 }
 section.presentacion div.card {
   background-color: #F7FCF9;
@@ -126,25 +125,13 @@ section.presentacion div.card div.item div.title h5 {
   width: 100%;
 }
 
-@media (max-width: 1920px) {
-  section.presentacion div.card {
-    width: 33%;
-    font-size: 27px;
-  }
-  section.presentacion div.card h2 {
-    font-size: 59px;
-  }
-  section.presentacion div.card div.item div.title img {
-    width: 55px;
-  }
-  section.presentacion div.card div.item div.title h5 {
-    font-size: 37px;
-  }
-}
 /* Tablet */
 @media (max-width: 768px) {
   section.presentacion div.card {
     width: 54%;
+  }
+  section.presentacion div.card h2 {
+    width: 100%;
   }
   section.presentacion div.card div.item div.title img {
     width: 30px;
@@ -157,6 +144,9 @@ section.presentacion div.card div.item div.title h5 {
   }
   section.presentacion div.card {
     width: 109%;
+  }
+  section.presentacion div.card h2 {
+    width: 100%;
   }
   section.presentacion div.card div.item div.title {
     width: 100%;

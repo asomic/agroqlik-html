@@ -142,70 +142,10 @@ section.planes-wrapper div.planes-inner div.items div.item div a.button {
   margin-right: 10px;
 }
 
-@media (max-width: 1920px) {
-  section.planes-wrapper div.planes-inner h2 {
-    font-size: 63px;
-  }
-  section.planes-wrapper div.planes-inner div.items {
-    display: flex;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item {
-    background-color: white;
-    width: 521px;
-    height: 649px;
-    margin-left: 0px auto;
-    margin-bottom: 10px;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.header img {
-    width: 46px;
-    height: auto;
-    margin-right: 5%;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.header h3 {
-    font-weight: 700;
-    margin-bottom: 32px;
-    color: #005377;
-    font-size: 51px;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.checks {
-    margin-left: 36px;
-    margin-right: 36px;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.checks div.check {
-    display: flex;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.checks div.check img {
-    width: 38px;
-    height: auto;
-    margin-right: 14px;
-    margin-bottom: 50px;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div.checks div.check p {
-    margin-top: -5px;
-    font-size: 27px;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item h4 {
-    color: #005377;
-    text-align: center;
-    font-size: 39px;
-    margin-top: 13px;
-  }
-  section.planes-wrapper div.planes-inner div.items div.item div a.button {
-    display: block;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 30px;
-  }
-}
 @media (max-width: 768px) {
   section.planes-wrapper div.planes-inner div.items {
     display: block;
+    margin-left: 81px;
   }
   section.planes-wrapper div.planes-inner div.items div.item {
     background-color: white;
@@ -270,6 +210,7 @@ section.planes-wrapper div.planes-inner div.items div.item div a.button {
   }
   section.planes-wrapper div.planes-inner div.items {
     display: block;
+    margin-left: 0px !important;
   }
   section.planes-wrapper div.planes-inner div.items div.item {
     background-color: white;

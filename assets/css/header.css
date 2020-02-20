@@ -80,11 +80,6 @@ a {
 }
 
 /* Notebook */
-header {
-  /* Screen PC */                   
-  /* Tablet */
-  /* Phone */
-}
 header div.header-inner {
   width: auto;
   display: flex;
@@ -98,21 +93,15 @@ header div.header-inner a.logo img {
 header div.header-inner div.buttons a.button.left {
   margin-left: 5px;
 }
-@media (max-width: 1920px) {
-  header .header-inner .logo img {
-    width: 250px !important;
-  }
-  header .header-inner .buttons .button {
-    width: 100%;
-    font-size: 29px;
-  }
-}
+
+/* Phone */
 @media (max-width: 425px) {
-  header .header-inner .logo img {
+  .header-inner .logo img {
     margin-left: -80px;
   }
-  header .header-inner .buttons {
+  .header-inner .buttons {
     display: flex;
     margin-left: 15px;
   }
+  /* Tablet */
 }

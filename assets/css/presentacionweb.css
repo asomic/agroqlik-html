@@ -83,7 +83,6 @@ a {
 section.the-webapp {
   background-image: url("../images/back-lines-3.png");
   background-size: cover;
-  /* Screen*/
 }
 section.the-webapp div.the-webapp-inner {
   display: flex;
@@ -120,45 +119,6 @@ section.the-webapp div.the-webapp-inner div.img img {
   margin-right: 128px;
 }
 
-@media (max-width: 1920px) {
-  section.the-webapp div.the-webapp-inner {
-    height: 750px !important;
-  }
-  section.the-webapp div.the-webapp-inner .data {
-    align-content: center;
-    height: 314px;
-  }
-  section.the-webapp div.the-webapp-inner .data.data {
-    margin-left: 133px;
-  }
-  section.the-webapp div.the-webapp-inner .data h3 {
-    width: 665px !important;
-    height: 175px !important;
-    color: #005377;
-    font-size: 50px;
-  }
-  section.the-webapp div.the-webapp-inner .data div.checks {
-    margin-bottom: 13px;
-  }
-  section.the-webapp div.the-webapp-inner .data div.checks div.check {
-    font-size: 30px;
-    width: 728px;
-  }
-  section.the-webapp div.the-webapp-inner .data div.checks div.check img {
-    width: 51px !important;
-    height: 46px !important;
-  }
-  section.the-webapp div.the-webapp-inner .data div.checks div.check p {
-    margin-bottom: 5px;
-  }
-  section.the-webapp div.the-webapp-inner div.img img {
-    width: 921px;
-    height: auto;
-    margin-left: 265px;
-  }
-
-  /* Tablet*/
-}
 @media (max-width: 768px) {
   section.the-webapp div.the-webapp-inner .data {
     align-content: center;

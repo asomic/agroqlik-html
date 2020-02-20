@@ -147,68 +147,6 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   margin-right: -55px;
 }
 
-@media (max-width: 1920px) {
-  section.equipo div.equipo-inner {
-    height: 643px;
-  }
-  section.equipo div.equipo-inner img.hoja {
-    width: 195.95px;
-    height: 150px;
-    margin-left: 670px;
-    margin-top: 15px;
-  }
-  section.equipo div.equipo-inner h2 {
-    width: 52%;
-    height: 162px;
-    margin-top: 63px;
-    text-align: center;
-    font-size: 72px;
-  }
-  section.equipo div.equipo-inner div.personas {
-    display: flex;
-    margin: 20px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona {
-    position: relative;
-    margin-right: 450px;
-    margin-left: -109px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona div.img img {
-    width: 89%;
-    height: auto;
-    margin-bottom: 193px;
-    margin-left: 135px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona div.data {
-    height: 576px;
-    width: 443px;
-    top: 65px;
-    left: 518px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona h5 {
-    font-size: 42px;
-    margin-bottom: 80px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona p.description {
-    width: 189px;
-    font-size: 23px;
-    margin-bottom: 59px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona p {
-    width: 286px;
-    font-size: 20px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona div.rrss {
-    margin-top: 60px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona div.rrss a {
-    top: 20px;
-  }
-  section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
-    width: 37px;
-    height: 35px;
-  }
-}
 @media (max-width: 768px) {
   section.equipo div.equipo-inner {
     height: 900px;

@@ -110,50 +110,12 @@ footer div.creditos {
   text-align: center;
   color: white;
 }
-/*Screen*/
-@media (max-width: 1920px) {
-  footer {
-    height: 350px;
-    margin-top: -17px;
-  }
-  footer div.footer-inner div.datos-wrapper {
-    display: flex;
-  }
-  footer div.footer-inner div.datos-wrapper div.item {
-    margin-left: 29px;
-    margin-bottom: -61px;
-  }
-  footer div.footer-inner div.datos-wrapper div.item img {
-    width: 116%;
-    height: auto;
-    margin-right: 0px;
-    margin-top: 44px;
-  }
-  footer div.footer-inner div.datos-wrapper div.item p {
-    color: white;
-    margin-left: 200px;
-    margin-top: 56px;
-    font-size: 25px;
-  }
-  footer div.footer-inner div.datos-wrapper div.item p a {
-    color: white;
-  }
-  footer div.creditos {
-    text-align: center;
-    color: white;
-    margin-top: 83px;
-  }
-  footer div.creditos p {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-  footer div.creditos p a img {
-    width: 147px;
-    height: 19, 61px;
-    margin: 0px 5px 0px 5px;
-  }
+footer div.creditos p img {
+  width: 67px;
+  height: 19, 61px;
+  margin: -3px 9px -6px 9px;
 }
+
 /*Tablet*/
 @media (max-width: 768px) {
   footer div.footer-inner div.datos-wrapper div.item {
@@ -167,19 +129,24 @@ footer div.creditos {
     margin-right: 20px;
     margin-bottom: 90px;
   }
+  footer div.creditos p img {
+    width: 82px;
+    height: auto;
+    margin: -17px 5px -8px 5px;
+  }
 }
 /* Phone */
 @media (max-width: 425px) {
   footer {
-    height: 300px;
-    margin-top: -17px;
+    background-color: #85CB33;
+    height: 400px;
   }
   footer div.footer-inner div.datos-wrapper {
     display: grid;
   }
   footer div.footer-inner div.datos-wrapper div.item {
     margin-left: 29px;
-    margin-bottom: -61px;
+    margin-bottom: -108px;
   }
   footer div.footer-inner div.datos-wrapper div.item img {
     width: 50%;
@@ -190,7 +157,8 @@ footer div.creditos {
   footer div.footer-inner div.datos-wrapper div.item p {
     color: white;
     margin-right: 75px;
-    margin-bottom: 13px;
+    margin-bottom: 72px;
+    margin-top: 37px;
   }
   footer div.footer-inner div.datos-wrapper div.item p a {
     color: white;

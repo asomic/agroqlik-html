@@ -137,7 +137,66 @@ section.hectareas div.items div.itemm p {
   font-weight: 700;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  section.hectareas {
+    background-image: url("../images/back-lines-5png");
+    background: rotate(-180deg);
+    text-align: center;
+    margin-top: 5%;
+  }
+  section.hectareas div img.hoja {
+    position: absolute;
+    margin-top: -26px;
+    width: 140px;
+    height: 150px;
+    left: 321px;
+  }
+  section.hectareas div h2 {
+    position: relative;
+    color: #005377;
+  }
+  section.hectareas div.items {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  section.hectareas div.items div.item {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+  section.hectareas div.items div.item img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.item p {
+    margin-top: -15%;
+    font-weight: 700;
+  }
+  section.hectareas div.items div.itemm {
+    background-color: white;
+    width: 180px;
+    height: 178px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+  }
+  section.hectareas div.items div.itemm img {
+    margin-top: 30px;
+    width: 45px;
+    height: 48px;
+  }
+  section.hectareas div.items div.itemm p {
+    margin-top: -20%;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   section.hectareas {
     text-align: center;
     margin-top: 5%;
@@ -192,67 +251,5 @@ section.hectareas div.items div.itemm p {
   section.hectareas div.items div.itemm p {
     margin-top: -20%;
     font-weight: 700;
-  }
-}
-@media (max-width: 1920px) {
-  section.hectareas div img.hoja {
-    position: absolute;
-    margin-top: -20px;
-    width: 140px;
-    height: 147px;
-    left: 886px;
-  }
-  section.hectareas div h2 {
-    position: relative;
-    color: #005377;
-    font-size: 63px;
-  }
-  section.hectareas div.items {
-    display: flex;
-    justify-content: center;
-    margin-top: 88px;
-  }
-  section.hectareas div.items div.item {
-    background-color: white;
-    width: 313px;
-    height: 285px;
-    margin-right: 4%;
-    text-align: center;
-    align-items: center;
-    margin-top: 6%;
-  }
-  section.hectareas div.items div.item img {
-    margin-top: 30px;
-    width: 81px;
-    height: auto;
-  }
-  section.hectareas div.items div.item h5 {
-    font-size: 37px;
-  }
-  section.hectareas div.items div.item p {
-    margin-top: 0px auto;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  section.hectareas div.items div.itemm {
-    background-color: white;
-    width: 313px;
-    height: 285px;
-    margin-right: 4%;
-    text-align: center;
-    align-items: center;
-  }
-  section.hectareas div.items div.itemm img {
-    margin-top: 30px;
-    width: 81px;
-    height: auto;
-  }
-  section.hectareas div.items div.itemm h5 {
-    font-size: 37px;
-  }
-  section.hectareas div.items div.itemm p {
-    margin-top: 0px auto;
-    font-weight: 700;
-    font-size: 20px;
   }
 }
