@@ -1,9 +1,7 @@
-@import app
-/* Notebook */
 header
-    div.header-inner
+    .header-inner
         width: auto
-        display: flex
+        display: flex 
         justify-content: space-between
         align-items: center
         margin-top: 48px
@@ -14,40 +12,3 @@ header
             a.button                
                 &.left
                     margin-left: 5px
-/* Phone */
-@media (max-width: 425px)   
-    .header-inner          
-        .logo         
-            img
-                margin-left: -80px
-        .buttons 
-            display: flex 
-            margin-left: 15px                                             
-            a.button
-    /* Tablet */
-@media (max-width: 768px)
-    .header-inner
-        .logo
-            img           
-        .buttons 
-            // display: flex                              
-            .button                    
-                &.left
-                // margin-left: 5px
-/* Screen PC */                   
-@media (max-width: 1920px) and (min-width: 769px)
-    .header-inner
-        .logo            
-            img 
-              width: 248px  !important     
-        .buttons 
-            // display: flex                              
-            .button 
-                width: 100%
-                font-size: 20px                   
-                &.left
-                // margin-left: 5px
-        
-                
-                
-                                

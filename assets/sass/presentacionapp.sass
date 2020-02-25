@@ -1,5 +1,3 @@
-@import app
-/* Notebook*/
 section.the-app
     background-image: url('../images/back-lines-2.png')
     background-size: cover
@@ -8,31 +6,39 @@ section.the-app
     width: 580px
     height: 584px
     margin-bottom: 160px
+    width: 100%
+    box-sizing: border-box
     div.the-app-inner   
         display: flex
-        margin-left: 29px
-        margin-top: 81px                 
-        div.img
-            margin-right: 180px        
+        margin-top: 130px
+        justify-content: space-between
+        align-items: center
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+        padding-top: 200px
+        padding-bottom: 100px
+        div.img 
+            width: 45%
             img 
-                width: 402px   
-                height: 587px                    
-        div.data  
-            widht: 433px
-            margin-right: 175px
-            margin-top: 99px
+               width: 100%            
+        div.data            
+            // margin-right: 175px
+            // margin-top: 99px
+            width: 45%
             h3                 
                 color: $blue                
             div.items 
                 width: 433px  
                 margin-top: 23px                              
                 div.item
-                    margin-bottom: -12px
-                    display: flex 
+                    margin-bottom: 8px
+                    display: flex
                     align-items: center
                     img  
                         width: 20px 
-                        height: 15px                                              
+                        height: 15px
+                        margin-right: 8px                                           
                         p                                                                           
             div.buttons
                 display: flex  
@@ -41,137 +47,4 @@ section.the-app
                 a                          
                     img
                         height: 46px
-                        margin-left: 15px
-    /* Screen */
-
-@media (max-width: 1920px)  and (min-width: 769px)
-    section.the-app
-        // background-image: url('../images/back-lines-2.png')
-        // background-size: cover
-        // display: flex
-        // justify-content: flex-start
-        width: 90%
-        height: 900px
-        // margin-bottom: 160px
-        div.the-app-inner   
-            // display: flex
-            margin-left: 0px auto  
-            // margin-top: 81px                 
-            div.img
-                margin-right: 127px         
-                img 
-                    width: auto   
-                    height: 978px                    
-            div.data  
-                widht: 433px
-                margin-right: 0px auto
-                margin-top: 30px
-                h3                 
-                    color: $blue
-                    font-size: 50px                
-                div.items 
-                    font-size: 30px
-                    width: auto  
-                    height: 0px auto
-                    margin-top: 66px                              
-                    div.item
-                        margin-bottom: -12px
-                        display: flex 
-                        align-items: center
-                        img  
-                            width: 51px 
-                            height: 46px                                              
-                            p                                                                           
-                div.buttons
-                    display: flex  
-                    flex-wrap: wrap 
-                    margin-top: 5%                          
-                    a                          
-                        img
-                            height: 80px
-                            margin-left: 15px
-/* Tablet*/
-@media (max-width: 768px)  
-    section.the-app
-        // background-image: url('../images/back-lines-2.png')
-        // background-size: cover
-        // display: flex
-        // justify-content: flex-start
-        // width: 580px
-        // height: 584px
-        // margin-bottom: 160px
-        div.the-app-inner   
-            // display: flex
-            margin-left: -139px
-            // margin-top: 81px                 
-            div.img
-                margin-right: 0px         
-                img 
-                    width: 402px   
-                    height: 587px                    
-            div.data  
-                widht: 433px
-                margin-right: 175px
-                margin-top: 99px
-                h3                 
-                    color: $blue                
-                div.items 
-                    width: 433px  
-                    margin-top: 23px                              
-                    div.item
-                        margin-bottom: -12px
-                        display: flex 
-                        align-items: center
-                        img  
-                            width: 20px 
-                            height: 15px                                              
-                            p                                                                           
-                div.buttons
-                    display: flex  
-                    flex-wrap: wrap 
-                    margin-top: 5%                          
-                    a                          
-                        img
-                            height: 46px
-                            margin-left: 15px
-
-@media (max-width: 425px)    
-    section.the-app  
-        div.the-app-inner  
-            display: block 
-            div.img
-                margin-left:  0px 
-                img 
-                    // width: 402px   
-                    // height: 587px                    
-            div.data  
-                margin-top: 0px           
-                margin-left: 30px 
-                // widht: 433px              
-                // margin-top: 99px
-                h3                 
-                    // color: $blue 
-                    // margin-right: 19px
-                    // margin-left: auto   
-                    margin-right: 76px       
-                div.items 
-                    // width: 433px  
-                    // margin-top: 23px  
-                    &.items
-                        // margin-left: 20px                            
-                    div.item
-                        // margin-bottom: -12px
-                        // display: flex 
-                        // align-items: center
-                        img  
-                            // width: 20px 
-                            // height: 15px                                              
-                            p                                                                           
-                div.buttons
-                    // display: flex  
-                    // flex-wrap: wrap 
-                    
-                    a 
-                        // margin-left: 30                        
-                        img
-                            // height: 46px                      
+                            

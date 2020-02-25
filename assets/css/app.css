@@ -8,42 +8,57 @@ body {
 /* Fuentes */
 p {
   line-height: 135%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1 {
   font-size: 42px;
   line-height: 110%;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 38px;
   line-height: 105%;
   font-weight: 700;
+  color: #005377;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
   font-size: 32px;
   line-height: 120%;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h4 {
   font-size: 28px;
   line-height: 115%;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h5 {
   font-size: 22px;
   line-height: 110%;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h6 {
   font-size: 17px;
   line-height: 110%;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
@@ -76,4 +91,573 @@ a {
 .paddings-l-r {
   padding-left: 112px;
   padding-right: 112px;
+}
+
+/* import  */
+header .header-inner {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+}
+header .header-inner a.logo img {
+  width: 149px;
+}
+header .header-inner div.buttons a.button.left {
+  margin-left: 5px;
+}
+
+section.hero {
+  width: 100%;
+  background-image: url("../images/back-lines-1.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+section.hero div.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  padding-bottom: 6%;
+}
+section.hero div.hero-inner h1 {
+  font-weight: 700;
+  margin-bottom: 26px;
+  text-align: center;
+  color: #005377;
+}
+section.hero div.hero-inner p {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+
+section.presentacion {
+  background-image: url("../images/campo-4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+section.presentacion div.card {
+  background-color: #F7FCF9;
+  width: 30%;
+  padding: 50px 45px;
+  margin-top: 61px;
+  margin-bottom: 90px;
+  border-radius: 4px;
+}
+section.presentacion div.card h2 {
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #005377;
+}
+section.presentacion div.card div.item {
+  width: 100%;
+  margin-bottom: 1.8em;
+}
+section.presentacion div.card div.item:last-child {
+  margin-bottom: 0;
+}
+section.presentacion div.card div.item div.title {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+section.presentacion div.card div.item div.title img {
+  width: 30px;
+  height: 100%;
+  margin-right: 14px;
+}
+section.presentacion div.card div.item div.title h5 {
+  font-weight: 700;
+  width: 100%;
+}
+
+section.the-app {
+  background-image: url("../images/back-lines-2.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  width: 580px;
+  height: 584px;
+  margin-bottom: 160px;
+  width: 100%;
+  box-sizing: border-box;
+}
+section.the-app div.the-app-inner {
+  display: flex;
+  margin-top: 130px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+section.the-app div.the-app-inner div.img {
+  width: 45%;
+}
+section.the-app div.the-app-inner div.img img {
+  width: 100%;
+}
+section.the-app div.the-app-inner div.data {
+  width: 45%;
+}
+section.the-app div.the-app-inner div.data h3 {
+  color: #005377;
+}
+section.the-app div.the-app-inner div.data div.items {
+  width: 433px;
+  margin-top: 23px;
+}
+section.the-app div.the-app-inner div.data div.items div.item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+section.the-app div.the-app-inner div.data div.items div.item img {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+section.the-app div.the-app-inner div.data div.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+section.the-app div.the-app-inner div.data div.buttons a img {
+  height: 46px;
+}
+
+/* Notebook*/
+section.the-webapp {
+  background-image: url("../images/back-lines-3.png");
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+}
+section.the-webapp div.the-webapp-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  padding-top: 24px;
+}
+section.the-webapp div.the-webapp-inner div.data {
+  align-items: center;
+  width: 45%;
+}
+section.the-webapp div.the-webapp-inner div.data h3 {
+  color: #005377;
+}
+section.the-webapp div.the-webapp-inner div.data div.checks {
+  margin-top: 23px;
+}
+section.the-webapp div.the-webapp-inner div.data div.checks div.check {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+section.the-webapp div.the-webapp-inner div.data div.checks div.check img {
+  width: 20px;
+  height: 15px;
+}
+section.the-webapp div.the-webapp-inner div.data div.checks div.check p {
+  margin-left: 8px;
+}
+section.the-webapp div.the-webapp-inner div.img {
+  width: 55%;
+  margin-right: -40px;
+}
+section.the-webapp div.the-webapp-inner div.img img {
+  width: 100%;
+}
+
+section.servicios {
+  background-image: url("../images/campo-3.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+section.servicios div.servicios-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 80px;
+}
+section.servicios div.servicios-inner h2 {
+  color: #F7FCF9;
+  font-weight: 700;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+section.servicios div.servicios-inner div.items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section.servicios div.servicios-inner div.items div.item {
+  background-color: #F7FCF9;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  width: 23%;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 43px;
+}
+section.servicios div.servicios-inner div.items div.item div.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section.servicios div.servicios-inner div.items div.item div.header img {
+  width: 20%;
+  margin-right: 15px;
+}
+section.servicios div.servicios-inner div.items div.item div.header h5 {
+  color: #005377;
+  display: flex;
+  width: 60%;
+}
+section.servicios div.servicios-inner div.items div.item div.checks {
+  margin-top: 20px;
+  width: 100%;
+}
+section.servicios div.servicios-inner div.items div.item div.checks div.check {
+  display: flex;
+  margin-bottom: 10px;
+}
+section.servicios div.servicios-inner div.items div.item div.checks div.check img {
+  width: 20px;
+  height: 17px;
+  margin-right: 8px;
+}
+section.equipo {
+  box-sizing: border-box;
+}
+section.equipo div.equipo-inner {
+  width: 100%;
+}
+section.equipo div.equipo-inner img.hoja {
+  position: absolute;
+  width: 12%;
+  align-items: center;
+  left: 592px;
+  margin-top: 20px;
+}
+section.equipo div.equipo-inner h2 {
+  position: relative;
+  color: #005377;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  padding-top: 60px;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-bottom: 53px;
+}
+section.equipo div.equipo-inner div.personas {
+  width: 100%;
+  display: flex;
+}
+section.equipo div.equipo-inner div.personas div.persona {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+section.equipo div.equipo-inner div.personas div.persona div.img {
+  width: 45%;
+}
+section.equipo div.equipo-inner div.personas div.persona div.img img {
+  width: 100%;
+}
+section.equipo div.equipo-inner div.personas div.persona div.data {
+  width: 55%;
+  position: absolute;
+  color: white;
+  top: 40px;
+  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+  left: 180px;
+  padding-left: 40px;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+section.equipo div.equipo-inner div.personas div.persona h5 {
+  color: #85CB33;
+  line-height: 130%;
+  margin-left: 62px;
+}
+section.equipo div.equipo-inner div.personas div.persona p.description {
+  color: #005377;
+  font-weight: 600;
+  line-height: 105%;
+  margin-bottom: 19px;
+  width: 189px;
+  height: 34px;
+}
+section.equipo div.equipo-inner div.personas div.persona p {
+  color: #373737;
+  margin-left: 62px;
+  margin-right: 62px;
+  width: 189px;
+  height: 165px;
+}
+section.equipo div.equipo-inner div.personas div.persona div.rrss {
+  display: flex;
+}
+section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
+  width: 20px;
+  height: 20px;
+  margin-left: 65px;
+  margin-right: -55px;
+}
+
+section.testimonio {
+  background-image: url("../images/campo-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+section.testimonio div.testimonio-inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15%;
+  padding-bottom: 6%;
+  box-sizing: border-box;
+}
+section.testimonio div.testimonio-inner div.item {
+  text-align: center;
+  width: 36%;
+}
+section.testimonio div.testimonio-inner div.item div.img img {
+  margin-top: 125px;
+  border-radius: 150px;
+  width: 13%;
+  margin-bottom: 22px;
+}
+section.testimonio div.testimonio-inner div.item h4 {
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.testimonio div.testimonio-inner div.item h6 {
+  color: white;
+  text-align: center;
+}
+section.testimonio div.testimonio-inner div.item p {
+  color: white;
+  text-align: center;
+}
+
+section.planes-wrapper {
+  background-image: url("../images/back-lines-2.png");
+  background-size: cover;
+}
+section.planes-wrapper div.planes-inner {
+  box-sizing: border-box;
+}
+section.planes-wrapper div.planes-inner h2 {
+  color: #85CB33;
+  text-align: center;
+  margin-top: 50px;
+  width: 37%;
+  padding-right: 30%;
+  padding-left: 30%;
+  margin-bottom: 62px;
+  margin-top: 122px;
+}
+section.planes-wrapper div.planes-inner h2 span {
+  color: #005377;
+}
+section.planes-wrapper div.planes-inner div.items {
+  display: flex;
+  justify-content: space-between;
+}
+section.planes-wrapper div.planes-inner div.items div.item {
+  background-color: white;
+  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+  border-radius: 6px;
+  width: 31%;
+}
+section.planes-wrapper div.planes-inner div.items div.item div.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 51px;
+  margin-bottom: 39px;
+}
+section.planes-wrapper div.planes-inner div.items div.item div.header img {
+  width: 10%;
+}
+section.planes-wrapper div.planes-inner div.items div.item div.header h3 {
+  font-weight: 700;
+  color: #005377;
+  width: 40%;
+}
+section.planes-wrapper div.planes-inner div.items div.item div.checks {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+section.planes-wrapper div.planes-inner div.items div.item div.checks div.check {
+  display: flex;
+  margin-bottom: 18px;
+}
+section.planes-wrapper div.planes-inner div.items div.item div.checks div.check img {
+  width: 20px;
+  height: 17px;
+  margin-right: 8px;
+}
+section.planes-wrapper div.planes-inner div.items div.item h4 {
+  color: #005377;
+  text-align: center;
+  margin-bottom: 21px;
+  margin-top: 27px;
+}
+section.planes-wrapper div.planes-inner div.items div.item div a.button {
+  display: block;
+  text-align: center;
+  margin-left: 36px;
+  margin-right: 36px;
+  margin-bottom: 36px;
+}
+
+section.hectareas {
+  background-image: url("../images/back-lines-5png");
+  background: rotate(-180deg);
+  text-align: center;
+}
+section.hectareas div.hectarea.inner {
+  box-sizing: border-box;
+  width: 100%;
+}
+section.hectareas div img.hoja {
+  position: absolute;
+  width: 12%;
+  align-items: center;
+  left: 592px;
+}
+section.hectareas div h2 {
+  padding-top: 70px;
+  position: relative;
+  color: #005377;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+section.hectareas div.items {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 3%;
+}
+section.hectareas div.items div.item {
+  background-color: white;
+  margin-top: 55px;
+  width: 12%;
+  padding: 5%;
+  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+}
+section.hectareas div.items div.item img {
+  width: 45px;
+  height: 48px;
+}
+section.hectareas div.items div.item p {
+  font-weight: 700;
+}
+section.hectareas div.items div.itemm {
+  background-color: white;
+  margin-top: 35px;
+  width: 12%;
+  padding: 5%;
+  margin-bottom: 3%;
+  box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
+}
+section.hectareas div.items div.itemm img {
+  width: 45px;
+  height: 48px;
+}
+section.hectareas div.items div.itemm p {
+  font-weight: 700;
+}
+
+section.cta {
+  background-image: url("../images/campo-2.jpg");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+section.cta div.cta-inner {
+  text-align: center;
+  width: 100%;
+  height: 413px;
+}
+section.cta div.cta-inner h1 {
+  color: white;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 120px;
+  line-height: 120%;
+  margin-bottom: 23px;
+}
+footer {
+  background-color: #85CB33;
+  height: 200px;
+}
+footer div.footer-inner div.datos-wrapper {
+  display: flex;
+}
+footer div.footer-inner div.datos-wrapper div.item {
+  margin-top: 51px;
+  margin-left: 72px;
+}
+footer div.footer-inner div.datos-wrapper div.item img {
+  width: 136px;
+  height: 38px;
+  margin-right: 204px;
+}
+footer div.footer-inner div.datos-wrapper div.item {
+  float: left;
+}
+footer div.footer-inner div.datos-wrapper div.item p {
+  color: white;
+  margin-right: 75px;
+  margin-bottom: 90px;
+}
+footer div.footer-inner div.datos-wrapper div.item p a {
+  color: white;
+}
+footer div.creditos {
+  text-align: center;
+  color: white;
+}
+footer div.creditos p img {
+  width: 67px;
+  height: 19, 61px;
+  margin: -3px 0px -6px 0px;
 }

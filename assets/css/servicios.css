@@ -146,40 +146,6 @@ section.servicios div.servicios-inner div.items div.item div.checks div.check p 
   margin: 5px;
 }
 
-@media (max-width: 1920px) and (min-width: 769px) {
-  section.servicios div.servicios-inner {
-    height: 1131px;
-  }
-  section.servicios div.servicios-inner h2 {
-    width: 90%;
-    font-size: 63px;
-  }
-  section.servicios div.servicios-inner div.items {
-    display: flex;
-  }
-  section.servicios div.servicios-inner div.items div.item {
-    margin-left: 0px;
-    width: 556px;
-    height: 560px;
-    margin-bottom: 22px;
-  }
-  section.servicios div.servicios-inner div.items div.item div.header img {
-    height: auto;
-  }
-  section.servicios div.servicios-inner div.items div.item div.header h5 {
-    font-size: 37px;
-  }
-  section.servicios div.servicios-inner div.items div.item div.checks {
-    margin-left: 11%;
-  }
-  section.servicios div.servicios-inner div.items div.item div.checks div.check img {
-    width: 43px;
-    height: 34px;
-  }
-  section.servicios div.servicios-inner div.items div.item div.checks div.check p {
-    font-size: 27px;
-  }
-}
 @media (max-width: 768px) {
   section.servicios div.servicios-inner h2 {
     width: 90%;

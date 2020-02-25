@@ -1,36 +1,38 @@
-@import app
-section.equipo
-    div.equipo-inner      
+section.equipo  
+    box-sizing: border-box  
+    div.equipo-inner
+        width: 100%      
         img.hoja  
             position: absolute
-            width: 147.95px
-            height: 150px
-            margin-left: 450px
-            margin-top: -30px
+            width: 12%
+            align-items: center
+            left: 592px
+            margin-top: 20px
         h2
             position: relative
             color: $blue   
-            font-weight: 700            
-            width: 509px
-            height: 93px
-            margin-top: 141px
-            margin-left: 350px
-            margin-right: 566px
+            font-weight: 700    
             line-height: 120%  
+            text-align: center
+            padding-top: 60px
+            padding-left: 30%
+            padding-right: 30%
+            margin-bottom: 53px
         div.personas
-            display: flex
-            margin: 20px 
+            width: 100%
+            display: flex         
             div.persona
                 position: relative
-                margin-right: 350px
-                div.img                                    
+                margin-right: auto
+                margin-left: auto
+                div.img
+                    width: 45%                                    
                     img 
+                        width: 100%
                         // margin-left: 111px
-                        // margin-top: 53px  
-                        width: 220px
-                        height: 285px
-                        border-radius: 4px
+                        // margin-top: 53px 
                 div.data
+                    width: 55%
                     position: absolute
                     color: white 
                     top: 40px 
@@ -38,6 +40,9 @@ section.equipo
                     // height: 366px 
                     box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
                     left: 180px
+                    padding-left: 40px
+                    padding-top: 37px  
+                    padding-bottom: 37px   
                     // margin-top: 71px               
                 h5
                     color: $green
@@ -64,221 +69,3 @@ section.equipo
                             height: 20px
                             margin-left: 65px
                             margin-right: -55px
-@media ( max-width: 768px )
-    section.equipo        
-        div.equipo-inner 
-            height:  900px     
-            img.hoja  
-                // position: absolute
-                // width: 147.95px
-                // height: 150px
-                margin-left: 146px
-                margin-top: -11px                
-            h2
-                // position: relative
-                // color: $blue   
-                // font-weight: 700            
-                width: 100%
-                height: 131px
-                margin-top: 63px
-                margin-left: 38px          
-                // line-height: 120%          
-            div.personas
-                display: block
-                margin: 20px 
-                div.persona
-                    position: relative
-                    margin-right: 450px
-                    margin-left: -109px
-                    div.img                                                        
-                        img 
-                            // margin-left: 111px
-                            // margin-top: 53px  
-                            width: 163px
-                            height: 201px
-                            // border-radius: 4px
-                            margin-bottom: 193px
-                            margin-left: 135px                        
-                    div.data  
-                        margin-left: 59px
-                        width: 272px                   
-                        // position: absolute
-                        // color: white 
-                        top: 10px                      
-                        // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
-                        left: 190px
-                    h5
-                        // color: $green
-                        // line-height: 130%
-                        // margin-left: 65px
-                    p.description
-                        // color: $blue
-                        // font-weight: 600                    
-                        // line-height: 105%
-                        // margin-bottom: 19px
-                        // width: 189px
-                        // height: 34px
-                    p
-                        // color: $dark
-                        // margin-left: 56px
-                       
-                        // width: 189px
-                        // height: 165px   
-                    div.rrss
-                        margin-bottom: 10px
-                        // display: flex
-                        // margin-left: -10px   
-                        
-                        a
-                            img                       
-                                // width: 20px
-                                // height: 20px
-                                // margin-left: 65px
-                                // margin-right: -55px 
-@media (max-width: 425px)
-    section.equipo        
-        div.equipo-inner 
-            height:  900px     
-            img.hoja  
-                position: absolute
-                width: 147.95px
-                height: 150px
-                margin-left: 0px
-                margin-top: -11px                
-            h2
-                position: relative
-                color: $blue   
-                font-weight: 700            
-                width: 350px
-                height: 131px
-                margin-top: 63px
-                margin-left: -58px          
-                line-height: 120%          
-            div.personas
-                display: block
-                margin: 20px 
-                div.persona
-                    position: relative
-                    margin-right: 450px
-                    margin-left: -109px
-                    div.img                                                        
-                        img 
-                            // margin-left: 111px
-                            // margin-top: 53px  
-                            width: 163px
-                            height: 201px
-                            border-radius: 4px
-                            margin-bottom: 174px
-                            margin-left: -19px                        
-                    div.data  
-                        margin-left: 59px
-                        width: 272px                   
-                        position: absolute
-                        color: white 
-                        top: 10px                      
-                        box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
-                        left: 44px
-                    h5
-                        color: $green
-                        line-height: 130%
-                        margin-left: 65px
-                    p.description
-                        color: $blue
-                        font-weight: 600                    
-                        line-height: 105%
-                        margin-bottom: 19px
-                        width: 189px
-                        height: 34px
-                    p
-                        color: $dark
-                        margin-left: 56px
-                    
-                        width: 189px
-                        height: 165px   
-                    div.rrss
-                        display: flex
-                        margin-left: -10px 
-                        a
-                            img                       
-                                width: 20px
-                                height: 20px
-                                margin-left: 65px
-                                margin-right: -55px
-
-@media ( max-width: 1920px )and(min-width: 769px)
-    section.equipo        
-        div.equipo-inner 
-            height:  643px     
-            img.hoja  
-                // position: absolute
-                width: 195.95px
-                height: 150px
-                margin-left: 670px
-                margin-top: 15px 
-            h2
-                // position: relative
-                // color: $blue   
-                // font-weight: 700            
-                width: 52%
-                height: 162px
-                margin-top: 63px
-                text-align: center
-                font-size: 72px
-                // line-height: 120%          
-            div.personas
-                display: flex
-                margin: 20px 
-                div.persona
-                    position: relative
-                    margin-right: 450px
-                    margin-left: -109px
-                    div.img                                                        
-                        img 
-                            // margin-left: 111px
-                            // margin-top: 53px  
-                            width: 89%
-                            height: auto
-                            // border-radius: 4px
-                            margin-bottom: 193px
-                            margin-left: 135px                        
-                    div.data  
-                        height: 576px
-                        width: 415px                   
-                        // position: absolute
-                        // color: white 
-                        top: 65px                      
-                        // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)  
-                        left: 518px
-                    h5
-                        // color: $green
-                        // line-height: 130%
-                        // margin-left: 65px
-                        font-size: 42px
-                        margin-bottom: 80px
-                    p.description
-                        // color: $blue
-                        // font-weight: 600                    
-                         line-height: 93%
-                        // margin-bottom: 19px
-                        width: 189px
-                        // height: 34px
-                        font-size: 23px
-                        margin-bottom: 59px
-                    p
-                        // color: $dark
-                        // margin-left: 56px
-                        width: 286px
-                        // height: 165px 
-                        font-size: 20px  
-                    div.rrss
-                        // margin-bottom: 10px
-                        // display: flex
-                        // margin-left: -10px   
-                        margin-top: 60px
-                        a
-                            top: 20px
-                            img                       
-                                width: 37px
-                                height: 35px
-                                // margin-left: 65px
-                                // margin-right: -55px  
