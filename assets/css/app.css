@@ -541,7 +541,7 @@ section.presentacion .presentacion-inner div.card h2 {
 }
 section.presentacion .presentacion-inner div.card div.item {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 section.presentacion .presentacion-inner div.card div.item:last-child {
   margin-bottom: 0;
