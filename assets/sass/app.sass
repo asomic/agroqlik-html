@@ -1,9 +1,10 @@
+@import reset
+    
 $green: #85CB33
 $dark-green: #5FAE31
 $light-green: #F7FCF9
 $blue: rgb(0, 83, 119)
 $dark: #373737
-
 
 /* set 
 body
@@ -25,6 +26,18 @@ h1
     margin-top: 0
     margin-bottom: 0
 
+@media (max-width: 1024px)
+    h1
+        font-size: 39px
+
+@media (max-width: 768px)
+    h1
+        font-size: 35px
+
+@media (max-width: 375px)
+    h1
+        font-size: 32px
+
 h2
     font-size: 38px
     line-height: 105%
@@ -33,6 +46,18 @@ h2
     margin-top: 0
     margin-bottom: 0
 
+@media (max-width: 1024px)
+    h2
+        font-size: 35px
+
+@media (max-width: 768px)
+    h2
+        font-size: 33px
+
+@media (max-width: 375px)
+    h2
+        font-size: 30px
+
 h3
     font-size: 32px
     line-height: 120%
@@ -40,12 +65,37 @@ h3
     margin-top: 0
     margin-bottom: 0
 
+@media (max-width: 1024px)
+    h3
+        font-size: 30px
+
+@media (max-width: 768px)
+    h3
+        font-size: 28px
+
+@media (max-width: 375px)
+    h3
+        font-size: 26px
+
 h4
     font-size: 28px
     line-height: 115%
     font-weight: 700
     margin-top: 0
     margin-bottom: 0
+
+@media (max-width: 1024px)
+    h4
+        font-size: 27px
+
+@media (max-width: 768px)
+    h4
+        font-size: 25px
+
+@media (max-width: 375px)
+    h4
+        font-size: 24px
+
 h5
     font-size: 22px
     line-height: 110%
@@ -53,12 +103,36 @@ h5
     margin-top: 0
     margin-bottom: 0
 
+@media (max-width: 1024px)
+    h5
+        font-size: 21px
+
+@media (max-width: 768px)
+    h5
+        font-size: 20px
+
+@media (max-width: 375px)
+    h5
+        font-size: 19px
+
 h6
     font-size: 17px
     line-height: 110%
     font-weight: 700
     margin-top: 0
     margin-bottom: 0
+
+@media (max-width: 1024px)
+    h6
+        font-size: 16px
+
+@media (max-width: 768px)
+    h6
+        font-size: 15px
+
+@media (max-width: 375px)
+    h6
+        font-size: 14px
 
 a
     text-decoration: none
@@ -75,25 +149,74 @@ a
     border-radius: 4px
     // COLOR DE FONDO
     background-color: $dark-green
-    padding: 11px 20px
+    padding: 10px 20px
     text-decoration: none
     color: white
     // Peso de la letra
     font-weight: 700
     border: solid 1px $dark-green
+    transition: all ease 0.3s
+    &:hover
+        background-color: $green
+        border: solid 1px $green
     &.outline
         background-color: transparent
         border: solid 1px $dark
         color: $dark
-    
-    
-    
+        &:hover
+            background-color: rgba(black, 0.05)
+            // border: solid 1px $green
+
+@media (max-width: 375px)
+    .button
+        // PARA HACER BORDES
+        // border-radius: 4px
+        // COLOR DE FONDO
+        // background-color: $dark-green
+        padding: 8px 18px
+        font-size: 14px
+        // text-decoration: none
+        // color: white
+        // Peso de la letra
+        // font-weight: 700
+        // border: solid 1px $dark-green
+        &.outline
+            // background-color: transparent
+            // border: solid 1px $dark
+            // color: $dark
 
 /* paddings
 
 .paddings-l-r
-    padding-left: 112px
-    padding-right: 112px
+    margin: 
+        left: auto
+        right: auto
+    max-width: 1100px
+
+// Cuando sea menor a 1400px
+@media (max-width: 1400px)
+    .paddings-l-r
+        padding-left: 112px
+        padding-right: 112px
+        max-width: none
+
+// Cuando sea menor a 1024px
+@media (max-width: 1024px)
+    .paddings-l-r
+        padding-left: 80px
+        padding-right: 80px
+
+// Cuando sea menor a 768px
+@media (max-width: 768px)
+    .paddings-l-r
+        padding-left: 46px
+        padding-right: 46px
+
+// Cuando sea menor a 375px
+@media (max-width: 375px)
+    .paddings-l-r
+        padding-left: 24px
+        padding-right: 24px
 
 /* import 
 

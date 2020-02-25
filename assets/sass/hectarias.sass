@@ -1,52 +1,269 @@
 section.hectareas //Falta imagen de la hoja 
-    background-image: url('../images/back-lines-5png')
-    background: rotate(-180deg)
     text-align: center  
-    div.hectarea.inner 
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        background-image: url('../images/back-lines-5.png')
+        background-size: cover
+        background-repeat: no-repeat
+        width: 80%
+        height: 70%
+        z-index: -1
+        right: 0
+        bottom: 0
+    div.hectareas-inner 
         box-sizing: border-box
-        width: 100%  
-    div        
-        img.hoja
-            position: absolute
-            width: 12%
-            align-items: center
-            left: 592px
+        width: 100%
+        padding-top: 110px
+        padding-bottom: 70px
         h2   
-            padding-top: 70px
+            // padding-top: 70px
             position: relative         
             color: $blue 
             padding-left: 20%
             padding-right: 20%
-    div.items
-        display: flex
-        justify-content: space-between  
-        padding-left: 10%
-        padding-right: 10%
-        margin-bottom: 3%
-        div.item
-            background-color: white
-            margin-top: 55px
-            width: 12%
-            padding: 5%
-            box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
-            img
-                width: 45px
-                height: 48px
-            h5
-            p
-                font-weight: 700  
-        div.itemm 
-            background-color: white
-            margin-top: 35px
-            width: 12%
-            padding: 5%
-            margin-bottom: 3%
-            box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
-            img
-                width: 45px
-                height: 48px
-                
-            h5
-            p
-                font-weight: 700
-     
+            margin-bottom: 56px
+            &::after
+                content: ''
+                position: absolute
+                background-image: url('../images/icon-soft.png')
+                background-size: cover
+                background-repeat: no-repeat
+                width: 147px
+                height: 150px
+                z-index: -1
+                right: 0
+                bottom: 0
+                left: 0
+                top: 0
+                margin: auto
+        div.items
+            display: flex
+            justify-content: space-between  
+            // padding-top: 32px
+            width: 80%
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 21px
+            div.item
+                position: relative
+                background-color: white
+                border-radius: 4px
+                // margin-top: 55px
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-content: center
+                width: 12%
+                padding: 34px 42px 30px 42px
+                box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                img
+                    width: 45px
+                    height: 48px
+                    margin-bottom: 18px
+                h5
+                    width: 100%
+                    margin-bottom: 2px
+                p
+                    font-weight: 700  
+                    font-size: 18px
+                    // margin-bottom: 0
+            div.itemm
+                top: 20px
+                // background-color: white
+                // margin-top: 35px
+                // width: 12%
+                // padding: 5%
+                // margin-bottom: 3%
+                // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                img
+                    width: 45px
+                    height: 48px
+                    
+                h5
+                p
+                    font-weight: 700
+
+// Cuando sea menor a 100px
+@media (max-width: 1024px)    
+    section.hectareas //Falta imagen de la hoja 
+        // background-image: url('../images/back-lines-5png')
+        // text-align: center  
+        div.hectareas-inner 
+            // box-sizing: border-box
+            // width: 100%
+            // padding-top: 110px
+            // padding-bottom: 70px
+            img.hoja
+                // position: absolute
+                // width: 12%
+                // align-items: center
+                // left: 592px
+            h2   
+                // position: relative         
+                // color: $blue 
+                // padding-left: 20%
+                // padding-right: 20%
+                // margin-bottom: 56px
+            div.items
+                // display: flex
+                // justify-content: space-between  
+                width: 90%
+                // margin-left: auto
+                // margin-right: auto
+                // margin-bottom: 21px
+                div.item
+                    // position: relative
+                    // background-color: white
+                    // border-radius: 4px
+                    // display: flex
+                    // flex-wrap: wrap
+                    // justify-content: center
+                    // align-content: center
+                    // width: 12%
+                    // padding: 34px 42px 30px 42px
+                    // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                    img
+                        // width: 45px
+                        // height: 48px
+                        // margin-bottom: 18px
+                    h5
+                        // width: 100%
+                        // margin-bottom: 2px
+                    p
+                        // font-weight: 700
+                        // font-size: 18px
+                div.itemm
+                    // top: 20px
+                    img
+                        // width: 45px
+                        // height: 48px
+                        
+                    h5
+                    p
+                        // font-weight: 700
+
+// Cuando sea menor a 768px
+@media (max-width: 768px)    
+    section.hectareas //Falta imagen de la hoja 
+        // background-image: url('../images/back-lines-5png')
+        // text-align: center  
+        div.hectareas-inner 
+            // box-sizing: border-box
+            // width: 100%
+            // padding-top: 110px
+            padding-bottom: 80px
+            img.hoja
+                // position: absolute
+                // width: 12%
+                // align-items: center
+                // left: 592px
+            h2   
+                // position: relative         
+                // color: $blue 
+                // padding-left: 20%
+                // padding-right: 20%
+                // margin-bottom: 56px
+            div.items
+                // display: flex
+                // justify-content: space-between  
+                width: 100%
+                // margin-left: auto
+                // margin-right: auto
+                // margin-bottom: 21px
+                div.item
+                    // position: relative
+                    // background-color: white
+                    // border-radius: 4px
+                    // display: flex
+                    // flex-wrap: wrap
+                    // justify-content: center
+                    // align-content: center
+                    width: 10%
+                    // padding: 34px 42px 30px 42px
+                    // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                    img
+                        // width: 45px
+                        // height: 48px
+                        // margin-bottom: 18px
+                    h5
+                        // width: 100%
+                        // margin-bottom: 2px
+                    p
+                        // font-weight: 700
+                        // font-size: 18px
+                div.itemm
+                    // top: 20px
+                    img
+                        // width: 45px
+                        // height: 48px
+                        
+                    h5
+                    p
+                        // font-weight: 700
+
+// Cuando sea menor a 375px
+@media (max-width: 375px)    
+    section.hectareas //Falta imagen de la hoja 
+        // background-image: url('../images/back-lines-5png')
+        // text-align: center  
+        div.hectareas-inner 
+            // box-sizing: border-box
+            // width: 100%
+            padding-top: 70px
+            // padding-bottom: 80px
+            img.hoja
+                // position: absolute
+                // width: 12%
+                // align-items: center
+                // left: 592px
+            h2   
+                // position: relative         
+                // color: $blue 
+                // padding-left: 20%
+                // padding-right: 20%
+                // margin-bottom: 56px
+            div.items
+                // display: flex
+                flex-wrap: wrap
+                // justify-content: space-between  
+                width: 100%
+                // margin-left: auto
+                // margin-right: auto
+                // margin-bottom: 21px
+                div.item
+                    // position: relative
+                    // background-color: white
+                    // border-radius: 4px
+                    // display: flex
+                    // flex-wrap: wrap
+                    // justify-content: center
+                    // align-content: center
+                    width: 48%
+                    box-sizing: border-box
+                    // padding: 34px 42px 30px 42px
+                    // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                    img
+                        // width: 45px
+                        // height: 48px
+                        // margin-bottom: 18px
+                    h5
+                        // width: 100%
+                        // margin-bottom: 2px
+                    p
+                        // font-weight: 700
+                        // font-size: 18px
+                    &:nth-child(-n+2)
+                        margin-bottom: 20px
+                        
+                div.itemm
+                    // top: 20px
+                    img
+                        // width: 45px
+                        // height: 48px
+                        
+                    h5
+                    p
+                        // font-weight: 700
+        

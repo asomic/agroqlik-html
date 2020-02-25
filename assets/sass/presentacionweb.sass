@@ -1,18 +1,29 @@
 /* Notebook*/
 section.the-webapp 
-    background-image: url('../images/back-lines-3.png')
-    background-size: cover
     width: 100%
     box-sizing: border-box
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        background-image: url('../images/back-lines-3.png')
+        background-size: cover
+        background-repeat: no-repeat
+        width: 35%
+        height: 100%
+        z-index: -1
+        right: 0
+        bottom: 0
     div.the-webapp-inner
+        z-index: 2
         display: flex   
         align-items: center 
         justify-content: space-between 
-        width: 95%
+        width: 70%
         margin-left: auto
         margin-right: auto 
         padding-bottom: 60px
-        padding-top: 24px
+        padding-top: 28px
         div.data   
             align-items: center
             width: 45%                                 
@@ -21,7 +32,7 @@ section.the-webapp
             div.checks   
                 margin-top: 23px                                 
                 div.check  
-                    margin-bottom: 8px                                   
+                    margin-bottom: 10px                                   
                     display: flex 
                     align-items: center
                     img
@@ -30,8 +41,127 @@ section.the-webapp
                     p
                         margin-left: 8px
         div.img  
-            width: 55%
-            margin-right: -40px
+            width: 60%
+            margin-right: -7%
             img
                 width: 100%
-     
+
+// Cuando sea menor a 100px
+@media (max-width: 1024px)
+    section.the-webapp 
+        // background-image: url('../images/back-lines-3.png')
+        // background-size: cover
+        // width: 100%
+        // box-sizing: border-box
+        div.the-webapp-inner
+            // display: flex   
+            // align-items: center 
+            // justify-content: space-between 
+            // width: 70%
+            // margin-left: auto
+            // margin-right: auto 
+            padding-bottom: 90px
+            // padding-top: 28px
+            div.data   
+                // align-items: center
+                // width: 45%                                 
+                h3                
+                    // color: $blue                                                                  
+                div.checks   
+                    // margin-top: 23px                                 
+                    div.check  
+                        // margin-bottom: 10px                                   
+                        // display: flex 
+                        // align-items: center
+                        img
+                            // width: 20px 
+                            // height: 15px  
+                        p
+                            // margin-left: 8px
+            div.img  
+                // width: 60%
+                // margin-right: -7%
+                img
+                    // width: 100%
+
+// Cuando sea menor a 768px
+@media (max-width: 768px)
+    section.the-webapp 
+        // background-image: url('../images/back-lines-3.png')
+        // background-size: cover
+        // width: 100%
+        // box-sizing: border-box
+        div.the-webapp-inner
+            // display: flex   
+            // align-items: center 
+            // justify-content: space-between 
+            width: 80%
+            // margin-left: auto
+            // margin-right: auto 
+            // padding-bottom: 90px
+            // padding-top: 28px
+            div.data   
+                // align-items: center
+                // width: 45%                                 
+                h3                
+                    // color: $blue                                                                  
+                div.checks   
+                    // margin-top: 23px                                 
+                    div.check  
+                        // margin-bottom: 10px                                   
+                        // display: flex 
+                        // align-items: center
+                        img
+                            // width: 20px 
+                            // height: 15px  
+                        p
+                            // margin-left: 8px
+            div.img  
+                // width: 60%
+                // margin-right: -7%
+                img
+                    // width: 100%
+// Cuando sea menor a 375px
+@media (max-width: 375px)
+    section.the-webapp 
+        // background-image: url('../images/back-lines-3.png')
+        // background-size: cover
+        // width: 100%
+        // box-sizing: border-box
+        div.the-webapp-inner
+            box-sizing: border-box
+            // display: flex   
+            // align-items: center 
+            // justify-content: space-between 
+            width: 100%
+            flex-wrap: wrap
+            // margin-left: auto
+            // margin-right: auto 
+            padding-bottom: 60px
+            padding-top: 0px
+            div.data   
+                // align-items: center
+                // width: 45%  
+                width: 100%   
+                order: 2                            
+                h3                
+                    // color: $blue                                                                  
+                div.checks   
+                    // margin-top: 23px                                 
+                    div.check  
+                        // margin-bottom: 10px                                   
+                        // display: flex 
+                        // align-items: center
+                        img
+                            // width: 20px 
+                            // height: 15px  
+                        p
+                            // margin-left: 8px
+            div.img  
+                // width: 60%
+                order: 1
+                width: 100%
+                margin-right: 0
+                margin-bottom: 20px
+                img
+                    // width: 100%

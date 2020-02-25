@@ -1,38 +1,93 @@
 footer
-    background-color: $green
-    height: 200px
+    background-color: $dark-green
+    // height: 200px
     div.footer-inner
+        padding: 
+            top: 50px
+            bottom: 60px
         div.datos-wrapper
             display: flex
+            justify-content: space-between
             div.item
-                margin-top: 51px
-                margin-left: 72px               
+                // margin-top: 51px
+                // margin-left: 72px               
                 img
                     width: 136px
-                    height: 38px
-                    margin-right: 204px
+                    // height: 38px
+                    // margin-right: 204px
             div.item 
-                float: left                              
+                // float: left                              
                 p                    
                     color: white
-                    margin-right: 75px 
-                    margin-bottom: 90px                
+                    // margin-right: 75px 
+                    // margin-bottom: 90px                
                     strong
                     a
                         color: white
             div.item
                 p
-                    strong
+                    span
+                        font-weight: 700
                     a
             div.item                
                 p                
                     strong
                 a
     div.creditos
-        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
         color: white
+        padding-bottom: 33px
         p
-            img 
+            color: #D5EAC9
+            img
                 width: 67px
-                height: 19,61px
-                margin:-3px 0px -6px 0px
+                // height: 19,61px
+                // margin:-3px 0px -6px 0px
+
+@media (max-width: 375px)
+    footer
+        // background-color: $dark-green
+        // height: 200px
+        div.footer-inner
+            padding: 
+                // top: 50px
+                bottom: 48px
+            div.datos-wrapper
+                // display: flex
+                flex-wrap: wrap
+                // justify-content: space-between
+                div.item
+                    width: 100%
+                    text-align: center
+                    // margin-top: 51px
+                    // margin-left: 72px               
+                    img
+                        // width: 136px
+                        // height: 38px
+                        // margin-right: 204px                        
+                    p                    
+                        // color: white
+                        // margin-right: 75px 
+                        // margin-bottom: 90px                
+                        a
+                            // color: white
+                    &:nth-child(1)
+                        margin-bottom: 24px
+                    &:nth-child(n+2)
+                        margin-bottom: 15px
+                    &:last-child
+                        margin-bottom: 0
+        div.creditos
+            // display: flex
+            // justify-content: center
+            // align-items: center
+            // color: white
+            // padding-bottom: 33px
+            p
+                // color: #D5EAC9
+                img
+                    // width: 67px
+                    // height: 19,61px
+                    // margin:-3px 0px -6px 0px

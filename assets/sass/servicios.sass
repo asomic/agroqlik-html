@@ -15,11 +15,11 @@ section.servicios
             color: $light-green
             font-weight: 700                    
             text-align: center
-            width: 80%
+            width: 65%
             margin-left: auto
             margin-right: auto
             padding-top: 100px
-            margin-bottom: 40px                  
+            margin-bottom: 50px                  
         div.items
             display: flex
             justify-content: space-between 
@@ -28,24 +28,24 @@ section.servicios
                 background-color: $light-green  
                 box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3)                    
                 border-radius: 6px
-                width: 23%
+                width: 24.5%
                 padding:
-                    top: 50px  
+                    top: 40px  
                     left: 40px
                     right: 40px   
-                    bottom: 43px
+                    bottom: 26px
                 div.header                     
                     display: flex                  
                     align-items: center 
-                    width: 100% 
+                    width: 100%
+                    margin-bottom: 26px
                     img 
                         width: 20% 
                         margin-right: 15px
                     h5   
                         color: $blue                       
                         display: flex
-                        width: 60%
-                                                                          
+                        width: 60%                                 
                 div.checks
                     margin-top: 20px  
                     width: 100%                
@@ -58,3 +58,73 @@ section.servicios
                             margin-right: 8px  
                         p
                           
+// Cuando sea menor a 100px
+@media (max-width: 1024px)
+    section.servicios
+        div.servicios-inner
+            div.items
+                div.item
+                    box-sizing: border-box
+                    width: 31.5%
+                    padding:
+                        top: 40px  
+                        left: 34px
+                        right: 32px
+                        bottom: 26px
+                          
+// Cuando sea menor a 768px
+@media (max-width: 768px)
+    section.servicios
+        div.servicios-inner
+            div.items
+                flex-wrap: wrap
+                justify-content: center
+                // box-sizing: border-box
+                div.item
+                    &:nth-child(-n+2)
+                        width: 48.5%
+                    &:nth-child(2)
+                        margin-left: 2.5%
+                    &:nth-child(3)
+                        width: 49%
+                        margin-top: 20px
+                    div.header
+                        img
+                            width: 50px
+                    // box-sizing: border-box
+                    // width: 31.5%
+                    // padding:
+                    //     top: 40px  
+                    //     left: 34px
+                    //     right: 32px
+                    //     bottom: 26px
+                          
+// Cuando sea menor a 375px
+@media (max-width: 375px)
+    section.servicios
+        div.servicios-inner
+            margin-bottom: 60px
+            h2
+                padding-top: 60px
+                width: 100%
+            div.items
+                // flex-wrap: wrap
+                // justify-content: center
+                // box-sizing: border-box
+                div.item
+                    &:nth-child(-n+2)
+                        // width: 48.5%
+                        width: 100%
+                    &:nth-child(2)
+                        margin-left: 0
+                        width: 100%
+                    &:nth-child(3)
+                        // width: 49%
+                        margin-top: 0
+                        width: 100%
+                    div.header
+                        img
+                            // width: 50px
+                    margin-bottom: 18px
+                    &:last-child
+                        margin-bottom: 0

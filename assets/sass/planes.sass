@@ -1,17 +1,31 @@
 section.planes-wrapper      
-    background-image: url('../images/back-lines-2.png')  
-    background-size: cover
-    div.planes-inner            
+    // background-image: url('../images/back-lines-2.png')  
+    // background-size: contain
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        background-image: url('../images/back-lines-4.png')
+        background-size: cover
+        background-repeat: no-repeat
+        width: 70%
+        height: 40%
+        z-index: -1
+        left: 0
+        top: 0
+    div.planes-inner    
+        z-index: 2        
         box-sizing: border-box
+        padding-top: 100px
         h2
             color: $green
             text-align: center
-            margin-top: 50px
+            // margin-top: 50px
             width: 37%
             padding-right: 30%
             padding-left: 30%
             margin-bottom: 62px
-            margin-top: 122px
+            // margin-top: 122px
             span
                 color: $blue                
         div.items
@@ -21,44 +35,255 @@ section.planes-wrapper
                 background-color: white   
                 box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
                 border-radius: 6px
-                width: 31%            
+                width: 32%
+                box-sizing: border-box
+                padding: 
+                    top: 44px
+                    left: 36px
+                    right: 36px
+                    bottom: 34px        
                 div.header                    
                     display: flex
-                    width: 100%
                     justify-content: center
-                    padding-top: 51px
-                    margin-bottom: 39px
+                    align-items: center
+                    width: 100%
+                    margin-bottom: 34px
                     img
                        width: 10%
+                       height: 100%
+                       margin-right: 10px
                     h3
                         font-weight: 700
                         color: $blue 
-                        width: 40% 
+                        // width: 40% 
                         
                 div.checks 
-                    padding: 
-                            left: 36px
-                            right: 36px  
                     div.check
                         display: flex 
                         margin-bottom: 18px
-                        
                         img
                             width: 20px
-                            height: 17px
-                            margin-right: 8px
+                            height: 100%
+                            margin-right: 16px
                         p  
                 h4
                     color: $blue
                     text-align: center
                     margin-bottom: 21px
                     margin-top: 27px
-                
-
                 div          
                     a.button
                         display: block
                         text-align: center
-                        margin-left: 36px
-                        margin-right: 36px
-                        margin-bottom:  36px
+                        background-color: $green
+                        border: solid 1px $green
+
+// Cuando sea menor a 100px
+@media (max-width: 1024px)
+    section.planes-wrapper      
+        // background-size: contain
+        div.planes-inner            
+            // box-sizing: border-box
+            // padding-top: 100px
+            h2
+                // color: $green
+                // text-align: center
+                width: 100%
+                padding-right: 24%
+                padding-left: 24%
+                box-sizing: border-box
+                // padding-right: 30%
+                // padding-left: 30%
+                // margin-bottom: 62px
+                span
+                    // color: $blue                
+            div.items
+                // display: flex  
+                // justify-content: space-between     
+                div.item
+                    // background-color: white   
+                    // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                    // border-radius: 6px
+                    width: 32%
+                    // box-sizing: border-box
+                    // padding: 
+                    //     top: 44px
+                    //     left: 36px
+                    //     right: 36px
+                    //     bottom: 34px        
+                    div.header                    
+                        // display: flex
+                        // justify-content: center
+                        // align-items: center
+                        // width: 100%
+                        // margin-bottom: 34px
+                        img
+                            // width: 10%
+                            // height: 100%
+                            // margin-right: 10px
+                        h3
+                            // font-weight: 700
+                            // color: $blue                            
+                    div.checks 
+                        div.check
+                            // display: flex 
+                            // margin-bottom: 18px
+                            img
+                                // width: 20px
+                                // height: 100%
+                                // margin-right: 16px
+                            p  
+                    h4
+                        // color: $blue
+                        // text-align: center
+                        // margin-bottom: 21px
+                        // margin-top: 27px
+                    div          
+                        a.button
+                            // display: block
+                            // text-align: center
+                            // background-color: $green
+                            // border: solid 1px $green
+
+
+// Cuando sea menor a 768px
+@media (max-width: 768px)
+    section.planes-wrapper      
+        // background-size: contain
+        div.planes-inner            
+            // box-sizing: border-box
+            // padding-top: 100px
+            h2
+                // color: $green
+                // text-align: center
+                // width: 100%
+                // padding-right: 24%
+                // padding-left: 24%
+                // box-sizing: border-box
+                // padding-right: 30%
+                // padding-left: 30%
+                // margin-bottom: 62px
+                span
+                    // color: $blue                
+            div.items
+                // display: flex  
+                // justify-content: space-between 
+                flex-wrap: wrap    
+                div.item
+                    width: 100%
+                    margin-bottom: 26px
+                    // background-color: white   
+                    // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                    // border-radius: 6px
+                    // width: 32%
+                    // box-sizing: border-box
+                    padding: 
+                        top: 52px
+                        left: 46px
+                        right: 46px
+                        bottom: 38px        
+                    div.header                    
+                        // display: flex
+                        // justify-content: center
+                        // align-items: center
+                        // width: 100%
+                        margin-bottom: 36px
+                        img
+                            width: 30px
+                            // height: 100%
+                            // margin-right: 10px
+                        h3
+                            // font-weight: 700
+                            // color: $blue                            
+                    div.checks 
+                        div.check
+                            // display: flex 
+                            // margin-bottom: 18px
+                            img
+                                // width: 20px
+                                // height: 100%
+                                // margin-right: 16px
+                            p  
+                    h4
+                        // color: $blue
+                        // text-align: center
+                        // margin-bottom: 21px
+                        // margin-top: 27px
+                    div          
+                        a.button
+                            // display: block
+                            // text-align: center
+                            // background-color: $green
+                            // border: solid 1px $green
+
+
+// Cuando sea menor a 375px
+@media (max-width: 375px)
+    section.planes-wrapper      
+        // background-size: contain
+        div.planes-inner            
+            // box-sizing: border-box
+            padding-top: 80px
+            h2
+                // color: $green
+                // text-align: center
+                // width: 100%
+                // padding-right: 24%
+                // padding-left: 24%
+                // box-sizing: border-box
+                // padding-right: 30%
+                // padding-left: 30%
+                // margin-bottom: 62px
+                span
+                    // color: $blue                
+            div.items
+                // display: flex  
+                // justify-content: space-between 
+                // flex-wrap: wrap    
+                div.item
+                    // width: 100%
+                    // margin-bottom: 26px
+                    // background-color: white   
+                    // box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12)
+                    // border-radius: 6px
+                    // width: 32%
+                    // box-sizing: border-box
+                    // padding: 
+                    //     top: 52px
+                    //     left: 46px
+                    //     right: 46px
+                    //     bottom: 38px        
+                    div.header                    
+                        // display: flex
+                        // justify-content: center
+                        // align-items: center
+                        // width: 100%
+                        margin-bottom: 36px
+                        img
+                            width: 30px
+                            // height: 100%
+                            // margin-right: 10px
+                        h3
+                            // font-weight: 700
+                            // color: $blue                            
+                    div.checks 
+                        div.check
+                            // display: flex 
+                            // margin-bottom: 18px
+                            img
+                                // width: 20px
+                                // height: 100%
+                                // margin-right: 16px
+                            p  
+                    h4
+                        // color: $blue
+                        // text-align: center
+                        // margin-bottom: 21px
+                        // margin-top: 27px
+                    div          
+                        a.button
+                            // display: block
+                            // text-align: center
+                            // background-color: $green
+                            // border: solid 1px $green
+

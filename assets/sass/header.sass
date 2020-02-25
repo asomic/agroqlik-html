@@ -1,10 +1,12 @@
 header
+    width: 100%
     .header-inner
-        width: auto
+        width: 100%
+        box-sizing: border-box
         display: flex 
         justify-content: space-between
         align-items: center
-        margin-top: 48px
+        padding-top: 48px
         a.logo                
             img
                 width: 149px
@@ -12,3 +14,21 @@ header
             a.button                
                 &.left
                     margin-left: 5px
+
+@media (max-width: 375px)
+    header
+        // width: 100%
+        .header-inner
+            // width: 100%
+            // box-sizing: border-box
+            // display: flex 
+            // justify-content: space-between
+            // align-items: center
+            padding-top: 48px
+            a.logo                
+                img
+                    width: 110px
+            div.buttons
+                a.button                
+                    &.left
+                        // margin-left: 5px
