@@ -1,8 +1,8 @@
 section.hero
     width: 100%
     background-image: url('../images/back-lines-1.png')
-    background-position: top
-    background-size: cover
+    background-position: bottom
+    background-size: contain
     background-repeat: no-repeat
     background-origin: border-box
     div.hero-inner
@@ -32,22 +32,39 @@ section.hero
     section.hero
         div.hero-inner
             width: 50%
+            padding-bottom: 80px
             h1 
             p
 
 // Cuando sea menor a 768px
 @media (max-width: 768px)
     section.hero
+        // background-position: bottom
+        background-size: cover
+        // background-repeat: no-repeat
+        // background-origin: border-box
         div.hero-inner
             width: 60%
             h1 
             p
 
-// Cuando sea menor a 375px
-@media (max-width: 375px)
+// Cuando sea menor a 640px
+@media (max-width: 640px)
     section.hero
         div.hero-inner
             margin-top: 100px
+            padding-bottom: 70px
             width: 80%
             h1 
             p
+
+// // Cuando sea menor a 375px
+// @media (max-width: 375px)
+//     section.hero
+//         overflow: hidden
+//         div.hero-inner
+//             overflow: hidden
+//             width: 100%
+//             // width: 80%
+//             h1 
+//             p

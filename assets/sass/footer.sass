@@ -16,23 +16,18 @@ footer
                     // height: 38px
                     // margin-right: 204px
             div.item 
-                // float: left                              
-                p                    
+                // float: left
+                p
                     color: white
-                    // margin-right: 75px 
-                    // margin-bottom: 90px                
+                    span
+                        font-weight: 700
                     strong
                     a
                         color: white
-            div.item
-                p
-                    span
-                        font-weight: 700
-                    a
-            div.item                
-                p                
-                    strong
-                a
+                        opacity: 1
+                        transition: all ease 0.3s
+                        &:hover
+                            opacity: 0.8
     div.creditos
         display: flex
         justify-content: center
@@ -46,7 +41,7 @@ footer
                 // height: 19,61px
                 // margin:-3px 0px -6px 0px
 
-@media (max-width: 375px)
+@media (max-width: 640px)
     footer
         // background-color: $dark-green
         // height: 200px

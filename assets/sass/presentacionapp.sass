@@ -1,6 +1,4 @@
 section.the-app
-    // background-image: url('../images/back-lines-2.png')
-    // background-size: cover
     display: flex
     justify-content: flex-start
     width: 100%
@@ -25,7 +23,7 @@ section.the-app
         margin-right: auto
         width: 70%
         // padding-top: 200px
-        padding-bottom: 100px
+        padding-bottom: 80px
         div.img 
             width: 45%
             img 
@@ -55,10 +53,15 @@ section.the-app
             div.buttons
                 display: flex  
                 flex-wrap: wrap 
-                margin-top: 24px                         
-                a                          
+                margin-top: 30px                         
+                a
+                    margin-right: 8px
+                    opacity: 1
+                    transition: all ease .3s
+                    &:hover
+                        opacity: 0.8                  
                     img
-                        height: 46px
+                        height: 42px
                             
 // Cuando sea menor a 100px
 @media (max-width: 1024px)
@@ -71,6 +74,12 @@ section.the-app
         // margin-bottom: 160px
         // width: 100%
         // box-sizing: border-box
+        &::before
+            width: 420px
+            height: 480px
+            // 768
+            // width: 50%
+            // height: 64%
         div.the-app-inner   
             // display: flex
             margin-top: 90px
@@ -164,8 +173,8 @@ section.the-app
                         img
                             // height: 46px
                             
-// Cuando sea menor a 375px
-@media (max-width: 375px)
+// Cuando sea menor a 640px
+@media (max-width: 640px)
     section.the-app
         // background-image: url('../images/back-lines-2.png')
         // background-size: cover
@@ -195,6 +204,61 @@ section.the-app
                 // margin-right: 175px
                 // margin-top: 99px
                 width: 100%
+                h3                 
+                    // color: $blue
+                    // margin-bottom: 28px
+                div.items 
+                    // width: 433px  
+                    // margin-top: 23px                              
+                    div.item
+                        // margin-bottom: 10px
+                        // display: flex
+                        // align-items: center
+                        img  
+                            // width: 20px 
+                            // height: 15px
+                            // margin-right: 8px                                           
+                            p                                                                           
+                div.buttons
+                    // display: flex  
+                    // flex-wrap: wrap 
+                    // margin-top: 24px                         
+                    a                          
+                        img
+                            // height: 46px
+                            
+// Cuando sea menor a 375px
+@media (max-width: 375px)
+    section.the-app
+        // background-image: url('../images/back-lines-2.png')
+        // background-size: cover
+        // display: flex
+        // justify-content: flex-start
+        // width: 580px
+        // margin-bottom: 0px
+        // width: 100%
+        // box-sizing: border-box
+        overflow: hidden
+        div.the-app-inner   
+            // display: flex
+            // margin-top: 90px
+            // justify-content: space-between
+            // align-items: center
+            // flex-wrap: wrap
+            // margin-left: auto
+            // margin-right: auto
+            // width: 100%
+            // margin-top: 50px
+            // padding-bottom: 60px
+            div.img 
+                // width: 100%
+                // margin-bottom: 20px
+                img 
+                // width: 100%            
+            div.data            
+                // margin-right: 175px
+                // margin-top: 99px
+                // width: 100%
                 h3                 
                     // color: $blue
                     // margin-bottom: 28px

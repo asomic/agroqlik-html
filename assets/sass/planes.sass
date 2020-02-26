@@ -16,15 +16,15 @@ section.planes-wrapper
     div.planes-inner    
         z-index: 2        
         box-sizing: border-box
-        padding-top: 100px
+        padding-top: 110px
         h2
             color: $green
             text-align: center
             // margin-top: 50px
-            width: 37%
+            // width: 100%
             padding-right: 30%
             padding-left: 30%
-            margin-bottom: 62px
+            margin-bottom: 58px
             // margin-top: 122px
             span
                 color: $blue                
@@ -47,7 +47,7 @@ section.planes-wrapper
                     justify-content: center
                     align-items: center
                     width: 100%
-                    margin-bottom: 34px
+                    margin-bottom: 30px
                     img
                        width: 10%
                        height: 100%
@@ -56,7 +56,6 @@ section.planes-wrapper
                         font-weight: 700
                         color: $blue 
                         // width: 40% 
-                        
                 div.checks 
                     div.check
                         display: flex 
@@ -64,7 +63,8 @@ section.planes-wrapper
                         img
                             width: 20px
                             height: 100%
-                            margin-right: 16px
+                            margin-top: 2px
+                            margin-right: 14px
                         p  
                 h4
                     color: $blue
@@ -77,11 +77,17 @@ section.planes-wrapper
                         text-align: center
                         background-color: $green
                         border: solid 1px $green
+                        &:hover
+                            background-color: $dark-green
+                            border: solid 1px $dark-green
 
 // Cuando sea menor a 100px
 @media (max-width: 1024px)
     section.planes-wrapper      
         // background-size: contain
+        &::before
+            width: 750px
+            height: 290px
         div.planes-inner            
             // box-sizing: border-box
             // padding-top: 100px
@@ -150,6 +156,9 @@ section.planes-wrapper
 @media (max-width: 768px)
     section.planes-wrapper      
         // background-size: contain
+        &::before
+            width: 750px
+            height: 290px
         div.planes-inner            
             // box-sizing: border-box
             // padding-top: 100px
@@ -217,8 +226,8 @@ section.planes-wrapper
                             // border: solid 1px $green
 
 
-// Cuando sea menor a 375px
-@media (max-width: 375px)
+// Cuando sea menor a 640px
+@media (max-width: 640px)
     section.planes-wrapper      
         // background-size: contain
         div.planes-inner            
@@ -228,8 +237,8 @@ section.planes-wrapper
                 // color: $green
                 // text-align: center
                 // width: 100%
-                // padding-right: 24%
-                // padding-left: 24%
+                padding-right: 14%
+                padding-left: 14%
                 // box-sizing: border-box
                 // padding-right: 30%
                 // padding-left: 30%
@@ -287,3 +296,10 @@ section.planes-wrapper
                             // background-color: $green
                             // border: solid 1px $green
 
+@media (max-width: 375px)
+    section.planes-wrapper      
+        // background-size: contain
+        overflow: hidden
+        &::before
+            width: 100%
+            height: 9%

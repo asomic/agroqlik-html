@@ -249,7 +249,7 @@ h1 {
     font-size: 35px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   h1 {
     font-size: 32px;
   }
@@ -273,7 +273,7 @@ h2 {
     font-size: 33px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   h2 {
     font-size: 30px;
   }
@@ -296,7 +296,7 @@ h3 {
     font-size: 28px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   h3 {
     font-size: 26px;
   }
@@ -319,7 +319,7 @@ h4 {
     font-size: 25px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   h4 {
     font-size: 24px;
   }
@@ -342,7 +342,7 @@ h5 {
     font-size: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   h5 {
     font-size: 19px;
   }
@@ -365,7 +365,7 @@ h6 {
     font-size: 15px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   h6 {
     font-size: 14px;
   }
@@ -384,7 +384,7 @@ a {
 .button {
   border-radius: 4px;
   background-color: #5FAE31;
-  padding: 10px 20px;
+  padding: 9px 20px;
   text-decoration: none;
   color: white;
   font-weight: 700;
@@ -404,7 +404,7 @@ a {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   .button {
     padding: 8px 18px;
     font-size: 14px;
@@ -436,13 +436,18 @@ a {
     padding-right: 46px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   .paddings-l-r {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
-/* import  */
+/* Hamburgers */
+.hamburger {
+  padding: 0;
+}
+
+/* imports */
 header {
   width: 100%;
 }
@@ -461,19 +466,47 @@ header .header-inner div.buttons a.button.left {
   margin-left: 5px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   header .header-inner {
     padding-top: 48px;
   }
   header .header-inner a.logo img {
+    width: 120px;
+  }
+}
+@media (max-width: 375px) {
+  header .header-inner {
+    flex-wrap: wrap;
+  }
+  header .header-inner a.logo img {
     width: 110px;
+  }
+  header .header-inner div.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    height: auto;
+    padding-top: 24px;
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    transition: all ease 0.3s;
+  }
+  header .header-inner div.buttons.open-buttons {
+    height: 38px;
+  }
+  header .header-inner div.buttons a.button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 section.hero {
   width: 100%;
   background-image: url("../images/back-lines-1.png");
-  background-position: top;
-  background-size: cover;
+  background-position: bottom;
+  background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
 }
@@ -504,16 +537,21 @@ section.hero div.hero-inner p {
 @media (max-width: 1024px) {
   section.hero div.hero-inner {
     width: 50%;
+    padding-bottom: 80px;
   }
 }
 @media (max-width: 768px) {
+  section.hero {
+    background-size: cover;
+  }
   section.hero div.hero-inner {
     width: 60%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.hero div.hero-inner {
     margin-top: 100px;
+    padding-bottom: 70px;
     width: 80%;
   }
 }
@@ -531,7 +569,7 @@ section.presentacion .presentacion-inner div.card {
   width: 32%;
   padding: 42px 50px;
   margin-top: 61px;
-  margin-bottom: 90px;
+  margin-bottom: 67px;
   border-radius: 4px;
 }
 section.presentacion .presentacion-inner div.card h2 {
@@ -570,7 +608,7 @@ section.presentacion .presentacion-inner div.card div.item div.title h5 {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.presentacion .presentacion-inner div.card {
     width: 100%;
   }
@@ -601,7 +639,7 @@ section.the-app div.the-app-inner {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 section.the-app div.the-app-inner div.img {
   width: 45%;
@@ -632,13 +670,25 @@ section.the-app div.the-app-inner div.data div.items div.item img {
 section.the-app div.the-app-inner div.data div.buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 30px;
+}
+section.the-app div.the-app-inner div.data div.buttons a {
+  margin-right: 8px;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+section.the-app div.the-app-inner div.data div.buttons a:hover {
+  opacity: 0.8;
 }
 section.the-app div.the-app-inner div.data div.buttons a img {
-  height: 46px;
+  height: 42px;
 }
 
 @media (max-width: 1024px) {
+  section.the-app::before {
+    width: 420px;
+    height: 480px;
+  }
   section.the-app div.the-app-inner {
     margin-top: 90px;
     width: 80%;
@@ -650,7 +700,7 @@ section.the-app div.the-app-inner div.data div.buttons a img {
     width: 84%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.the-app div.the-app-inner {
     flex-wrap: wrap;
     width: 100%;
@@ -663,6 +713,11 @@ section.the-app div.the-app-inner div.data div.buttons a img {
   }
   section.the-app div.the-app-inner div.data {
     width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  section.the-app {
+    overflow: hidden;
   }
 }
 /* Notebook*/
@@ -691,8 +746,8 @@ section.the-webapp div.the-webapp-inner {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 60px;
-  padding-top: 28px;
+  padding-top: 16px;
+  padding-bottom: 80px;
 }
 section.the-webapp div.the-webapp-inner div.data {
   align-items: center;
@@ -725,7 +780,13 @@ section.the-webapp div.the-webapp-inner div.img img {
 }
 
 @media (max-width: 1024px) {
+  section.the-webapp::after {
+    width: 400px;
+    height: 350px;
+  }
   section.the-webapp div.the-webapp-inner {
+    padding-top: 2px;
+    width: 80%;
     padding-bottom: 90px;
   }
 }
@@ -734,7 +795,7 @@ section.the-webapp div.the-webapp-inner div.img img {
     width: 80%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.the-webapp div.the-webapp-inner {
     box-sizing: border-box;
     width: 100%;
@@ -761,8 +822,20 @@ section.servicios {
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+}
+section.servicios::before {
+  content: "";
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
 }
 section.servicios div.servicios-inner {
+  position: relative;
+  z-index: 2;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -787,8 +860,9 @@ section.servicios div.servicios-inner div.items div.item {
   background-color: #F7FCF9;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
-  width: 24.5%;
-  padding-top: 40px;
+  width: 32%;
+  box-sizing: border-box;
+  padding-top: 38px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 26px;
@@ -797,7 +871,7 @@ section.servicios div.servicios-inner div.items div.item div.header {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 section.servicios div.servicios-inner div.items div.item div.header img {
   width: 20%;
@@ -822,9 +896,11 @@ section.servicios div.servicios-inner div.items div.item div.checks div.check im
   margin-right: 8px;
 }
 @media (max-width: 1024px) {
+  section.servicios div.servicios-inner h2 {
+    padding-top: 90px;
+  }
   section.servicios div.servicios-inner div.items div.item {
     box-sizing: border-box;
-    width: 31.5%;
     padding-top: 40px;
     padding-left: 34px;
     padding-right: 32px;
@@ -850,7 +926,7 @@ section.servicios div.servicios-inner div.items div.item div.checks div.check im
     width: 50px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.servicios div.servicios-inner {
     margin-bottom: 60px;
   }
@@ -881,8 +957,8 @@ section.equipo {
 }
 section.equipo div.equipo-inner {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 106px;
+  padding-bottom: 82px;
   box-sizing: border-box;
 }
 section.equipo div.equipo-inner h2 {
@@ -893,7 +969,7 @@ section.equipo div.equipo-inner h2 {
   text-align: center;
   padding-left: 24%;
   padding-right: 24%;
-  margin-bottom: 53px;
+  margin-bottom: 56px;
 }
 section.equipo div.equipo-inner h2::after {
   content: "";
@@ -917,22 +993,30 @@ section.equipo div.equipo-inner div.personas {
 }
 section.equipo div.equipo-inner div.personas div.persona {
   position: relative;
-  width: 49%;
+  width: 47.8%;
   display: flex;
   margin-top: 40px;
 }
 section.equipo div.equipo-inner div.personas div.persona div.img {
-  width: 45%;
+  width: 50%;
+  height: 80%;
   z-index: 2;
   margin-top: -40px;
-}
-section.equipo div.equipo-inner div.personas div.persona div.img img {
-  width: 100%;
   border-radius: 4px;
+  background-color: #373737;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+section.equipo div.equipo-inner div.personas div.persona div.img.paulo {
+  background-image: url("../images/foto-paulo.jpg");
+}
+section.equipo div.equipo-inner div.personas div.persona div.img.susana {
+  background-image: url("../images/foto-susana.png");
 }
 section.equipo div.equipo-inner div.personas div.persona div.data {
   width: 60%;
-  left: -26px;
+  margin-left: -26px;
   position: relative;
   z-index: 1;
   border-radius: 4px;
@@ -940,14 +1024,15 @@ section.equipo div.equipo-inner div.personas div.persona div.data {
   background: white;
   box-sizing: border-box;
   box-shadow: 7px 10px 30px rgba(13, 93, 86, 0.12);
-  padding-top: 37px;
-  padding-left: 66px;
-  padding-right: 52px;
-  padding-bottom: 37px;
+  padding-top: 34px;
+  padding-left: 62px;
+  padding-right: 42px;
+  padding-bottom: 36px;
 }
 section.equipo div.equipo-inner div.personas div.persona h5 {
   color: #85CB33;
   line-height: 130%;
+  font-size: 24px;
 }
 section.equipo div.equipo-inner div.personas div.persona p.description {
   color: #005377;
@@ -965,15 +1050,24 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss {
 }
 section.equipo div.equipo-inner div.personas div.persona div.rrss a {
   margin-right: 10px;
+  opacity: 1;
+  transition: all ease 0.3s;
 }
 section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   width: 20px;
+}
+section.equipo div.equipo-inner div.personas div.persona div.rrss a:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 1024px) {
   section.equipo div.equipo-inner h2 {
     padding-left: 20%;
     padding-right: 20%;
+  }
+  section.equipo div.equipo-inner h2::after {
+    width: 127px;
+    height: 130px;
   }
   section.equipo div.equipo-inner div.personas {
     flex-wrap: wrap;
@@ -987,6 +1081,7 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   }
   section.equipo div.equipo-inner div.personas div.persona div.img {
     width: 30%;
+    height: 100%;
   }
   section.equipo div.equipo-inner div.personas div.persona div.data {
     width: 74%;
@@ -998,25 +1093,39 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
     padding-bottom: 42px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  section.equipo div.equipo-inner div.personas div.persona:last-child {
+    margin-bottom: 0;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.img {
+    width: 40%;
+  }
+  section.equipo div.equipo-inner div.personas div.persona div.data {
+    width: 64%;
+    padding-top: 38px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 640px) {
   section.equipo div.equipo-inner {
-    padding-top: 70px;
+    padding-top: 94px;
     padding-bottom: 70px;
   }
   section.equipo div.equipo-inner h2 {
     padding-left: 0%;
     padding-right: 0%;
+    margin-bottom: 74px;
   }
   section.equipo div.equipo-inner div.personas div.persona {
     margin-top: 0;
     margin-bottom: 40px;
-    flex-wrap: wrap;
   }
   section.equipo div.equipo-inner div.personas div.persona:last-child {
     margin-bottom: 0;
   }
   section.equipo div.equipo-inner div.personas div.persona div.img {
-    width: 100%;
+    width: 86%;
+    height: 80%;
     margin-top: 0px;
   }
   section.equipo div.equipo-inner div.personas div.persona div.img img {
@@ -1026,13 +1135,13 @@ section.equipo div.equipo-inner div.personas div.persona div.rrss a img {
   }
   section.equipo div.equipo-inner div.personas div.persona div.data {
     width: 100%;
-    margin-left: 0px;
+    margin-top: 20px;
     border-radius: 0;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     padding-top: 42px;
-    padding-left: 40px;
-    padding-right: 60px;
+    padding-left: 68px;
+    padding-right: 46px;
     padding-bottom: 42px;
   }
 }
@@ -1040,13 +1149,31 @@ section.testimonio {
   background-image: url("../images/campo-1.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+section.testimonio::before {
+  content: "";
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("../images/campo-gradient.png");
+  z-index: 2;
 }
 section.testimonio div.testimonio-inner {
   display: flex;
+  z-index: 3;
+  position: relative;
   justify-content: center;
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 114px;
   box-sizing: border-box;
 }
 section.testimonio div.testimonio-inner div.item {
@@ -1057,8 +1184,8 @@ section.testimonio div.testimonio-inner div.item div.img {
   margin-bottom: 22px;
 }
 section.testimonio div.testimonio-inner div.item div.img img {
-  border-radius: 90px;
-  width: 90px;
+  border-radius: 110px;
+  width: 110px;
 }
 section.testimonio div.testimonio-inner div.item h4 {
   color: white;
@@ -1069,6 +1196,7 @@ section.testimonio div.testimonio-inner div.item h4 {
 section.testimonio div.testimonio-inner div.item h6 {
   color: white;
   text-align: center;
+  margin-bottom: 1px;
 }
 section.testimonio div.testimonio-inner div.item p {
   color: white;
@@ -1080,7 +1208,15 @@ section.testimonio div.testimonio-inner div.item p {
     width: 42%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  section.testimonio div.testimonio-inner {
+    padding-bottom: 116px;
+  }
+  section.testimonio div.testimonio-inner div.item {
+    width: 70%;
+  }
+}
+@media (max-width: 640px) {
   section.testimonio div.testimonio-inner div.item {
     width: 100%;
   }
@@ -1103,15 +1239,14 @@ section.planes-wrapper::before {
 section.planes-wrapper div.planes-inner {
   z-index: 2;
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 110px;
 }
 section.planes-wrapper div.planes-inner h2 {
   color: #85CB33;
   text-align: center;
-  width: 37%;
   padding-right: 30%;
   padding-left: 30%;
-  margin-bottom: 62px;
+  margin-bottom: 58px;
 }
 section.planes-wrapper div.planes-inner h2 span {
   color: #005377;
@@ -1136,7 +1271,7 @@ section.planes-wrapper div.planes-inner div.items div.item div.header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 section.planes-wrapper div.planes-inner div.items div.item div.header img {
   width: 10%;
@@ -1154,7 +1289,8 @@ section.planes-wrapper div.planes-inner div.items div.item div.checks div.check 
 section.planes-wrapper div.planes-inner div.items div.item div.checks div.check img {
   width: 20px;
   height: 100%;
-  margin-right: 16px;
+  margin-top: 2px;
+  margin-right: 14px;
 }
 section.planes-wrapper div.planes-inner div.items div.item h4 {
   color: #005377;
@@ -1168,8 +1304,16 @@ section.planes-wrapper div.planes-inner div.items div.item div a.button {
   background-color: #85CB33;
   border: solid 1px #85CB33;
 }
+section.planes-wrapper div.planes-inner div.items div.item div a.button:hover {
+  background-color: #5FAE31;
+  border: solid 1px #5FAE31;
+}
 
 @media (max-width: 1024px) {
+  section.planes-wrapper::before {
+    width: 750px;
+    height: 290px;
+  }
   section.planes-wrapper div.planes-inner h2 {
     width: 100%;
     padding-right: 24%;
@@ -1181,6 +1325,10 @@ section.planes-wrapper div.planes-inner div.items div.item div a.button {
   }
 }
 @media (max-width: 768px) {
+  section.planes-wrapper::before {
+    width: 750px;
+    height: 290px;
+  }
   section.planes-wrapper div.planes-inner div.items {
     flex-wrap: wrap;
   }
@@ -1199,15 +1347,28 @@ section.planes-wrapper div.planes-inner div.items div.item div a.button {
     width: 30px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.planes-wrapper div.planes-inner {
     padding-top: 80px;
+  }
+  section.planes-wrapper div.planes-inner h2 {
+    padding-right: 14%;
+    padding-left: 14%;
   }
   section.planes-wrapper div.planes-inner div.items div.item div.header {
     margin-bottom: 36px;
   }
   section.planes-wrapper div.planes-inner div.items div.item div.header img {
     width: 30px;
+  }
+}
+@media (max-width: 375px) {
+  section.planes-wrapper {
+    overflow: hidden;
+  }
+  section.planes-wrapper::before {
+    width: 100%;
+    height: 9%;
   }
 }
 section.hectareas {
@@ -1229,8 +1390,8 @@ section.hectareas::after {
 section.hectareas div.hectareas-inner {
   box-sizing: border-box;
   width: 100%;
-  padding-top: 110px;
-  padding-bottom: 70px;
+  padding-top: 170px;
+  padding-bottom: 114px;
 }
 section.hectareas div.hectareas-inner h2 {
   position: relative;
@@ -1257,7 +1418,7 @@ section.hectareas div.hectareas-inner h2::after {
 section.hectareas div.hectareas-inner div.items {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 21px;
@@ -1299,13 +1460,22 @@ section.hectareas div.hectareas-inner div.items div.itemm p {
 }
 
 @media (max-width: 1024px) {
+  section.hectareas::after {
+    width: 650px;
+    height: 275px;
+  }
+  section.hectareas div.hectareas-inner h2::after {
+    width: 127px;
+    height: 130px;
+  }
   section.hectareas div.hectareas-inner div.items {
     width: 90%;
   }
 }
 @media (max-width: 768px) {
   section.hectareas div.hectareas-inner {
-    padding-bottom: 80px;
+    padding-top: 110px;
+    padding-bottom: 100px;
   }
   section.hectareas div.hectareas-inner div.items {
     width: 100%;
@@ -1314,7 +1484,7 @@ section.hectareas div.hectareas-inner div.items div.itemm p {
     width: 10%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.hectareas div.hectareas-inner {
     padding-top: 70px;
   }
@@ -1334,13 +1504,28 @@ section.cta {
   background-image: url("../images/campo-2.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+section.cta::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 section.cta div.cta-inner {
+  position: relative;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
+  z-index: 2;
   padding-top: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 140px;
 }
 section.cta div.cta-inner h1 {
   color: white;
@@ -1351,6 +1536,13 @@ section.cta div.cta-inner h1 {
   line-height: 120%;
   margin-bottom: 23px;
 }
+@media (max-width: 1024px) {
+  section.cta div.cta-inner h1 {
+    padding-left: 16%;
+    padding-right: 16%;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 768px) {
   section.cta div.cta-inner h1 {
     padding-left: 20%;
@@ -1358,10 +1550,13 @@ section.cta div.cta-inner h1 {
     margin-bottom: 32px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   section.cta {
     width: 100%;
     box-sizing: border-box;
+  }
+  section.cta div.cta-inner {
+    width: 90%;
   }
   section.cta div.cta-inner h1 {
     font-size: 32px;
@@ -1387,11 +1582,16 @@ footer div.footer-inner div.datos-wrapper div.item img {
 footer div.footer-inner div.datos-wrapper div.item p {
   color: white;
 }
-footer div.footer-inner div.datos-wrapper div.item p a {
-  color: white;
-}
 footer div.footer-inner div.datos-wrapper div.item p span {
   font-weight: 700;
+}
+footer div.footer-inner div.datos-wrapper div.item p a {
+  color: white;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+footer div.footer-inner div.datos-wrapper div.item p a:hover {
+  opacity: 0.8;
 }
 footer div.creditos {
   display: flex;
@@ -1407,7 +1607,7 @@ footer div.creditos p img {
   width: 67px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   footer div.footer-inner {
     padding-bottom: 48px;
   }

@@ -22,8 +22,8 @@ section.the-webapp
         width: 70%
         margin-left: auto
         margin-right: auto 
-        padding-bottom: 60px
-        padding-top: 28px
+        padding-top: 16px
+        padding-bottom: 80px
         div.data   
             align-items: center
             width: 45%                                 
@@ -53,11 +53,15 @@ section.the-webapp
         // background-size: cover
         // width: 100%
         // box-sizing: border-box
+        &::after
+            width: 400px
+            height: 350px
         div.the-webapp-inner
             // display: flex   
             // align-items: center 
             // justify-content: space-between 
-            // width: 70%
+            padding-top: 2px
+            width: 80%
             // margin-left: auto
             // margin-right: auto 
             padding-bottom: 90px
@@ -121,8 +125,9 @@ section.the-webapp
                 // margin-right: -7%
                 img
                     // width: 100%
-// Cuando sea menor a 375px
-@media (max-width: 375px)
+                    
+// Cuando sea menor a 640px
+@media (max-width: 640px)
     section.the-webapp 
         // background-image: url('../images/back-lines-3.png')
         // background-size: cover
