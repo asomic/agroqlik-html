@@ -645,6 +645,10 @@ a {
   border-radius: 4px;
   font-weight: 700;
   padding: 12px 20px;
+  background-color: #85CB33;
+  transition: all ease 0.3s;
+}
+.modal .modal-inner .data .form input[type=submit]:hover, .modal .modal-inner .data .form input[type=submit]:focus {
   background-color: #5FAE31;
 }
 
