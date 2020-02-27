@@ -11,8 +11,11 @@ body
     font-family: 'Source Sans Pro', sans-serif
     background-color: $light-green 
     font-size: 15px
+    max-width: 100%
+    position: relative
+    // top: 0
+    // margin-top: 0
   
-
 /* Fuentes
 p
     line-height: 135%
@@ -186,15 +189,21 @@ a
             // color: $dark
 
 /* paddings
-
 .paddings-l-r
     margin: 
         left: auto
         right: auto
     max-width: 1100px
 
-// Cuando sea menor a 1400px
-@media (max-width: 1400px)
+// Cuando sea menor a 1440px
+@media (max-width: 1440px)
+    .paddings-l-r
+        padding-left: 140px
+        padding-right: 140px
+        max-width: none
+
+// Cuando sea menor a 1360px
+@media (max-width: 1360px)
     .paddings-l-r
         padding-left: 112px
         padding-right: 112px
@@ -212,7 +221,7 @@ a
         padding-left: 46px
         padding-right: 46px
 
-// Cuando sea menor a 375px
+// Cuando sea menor a 640px
 @media (max-width: 640px)
     .paddings-l-r
         padding-left: 24px
@@ -221,6 +230,348 @@ a
 /* Hamburgers
 .hamburger
     padding: 0
+
+@-webkit-keyframes moving
+    0%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+    50%
+        -webkit-transform: translateY(-5px)
+        transform: translateY(-5px)
+    100%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@keyframes moving
+    0%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+    50%
+        -webkit-transform: translateY(-5px)
+        transform: translateY(-5px)
+    100%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+/* Modals
+.modal
+    position: fixed
+    z-index: 9999
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    background-color: rgba(black, 0.25)
+    visibility: hidden
+    opacity: 0
+    transition: all ease 0.3s
+    &.show-modal
+        visibility: visible
+        opacity: 1
+    .modal-inner
+        background-color: white
+        position: absolute
+        background-color: white
+        border-radius: 6px
+        overflow: hidden
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        margin: auto
+        width: 50vw
+        height: 64vh
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .img
+            width: 41%
+            background-image: url('../images/campo-5.jpg')
+            background-size: cover
+            background-position: 40% 50%
+        .data
+            width: 59%
+            padding: 30px 40px 18px
+            box-sizing: border-box
+            background-color: $light-green
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            align-content: center
+            position: relative
+            .x
+                top: 4%
+                right: 4%
+                position: absolute
+                font-weight: 700
+                border-radius: 20px
+                border: solid 3px #BDC6C1
+                width: 24px
+                height: 24px
+                font-size: 18px
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 0
+                text-align: center
+                cursor: pointer
+                transition: all ease 0.3s
+                &::before
+                    content: ''
+                    width: 3px
+                    height: 16px
+                    background-color: #BDC6C1
+                    position: absolute
+                    transform: rotate(45deg)
+                &::after
+                    content: ''
+                    width: 16px
+                    height: 3px
+                    background-color: #BDC6C1
+                    position: absolute
+                    transform: rotate(45deg)
+                &:hover, &:focus
+                    border: solid 3px #89968E
+                    &::before,
+                    &::after
+                        background-color: #89968E
+            .header
+                width: 100%
+                text-align: center
+                margin-bottom: 32px
+                img
+                h3
+                    color: $blue
+            .cards
+                width: 100%
+                display: block
+                .card
+                    background-color: white
+                    border: solid 0.5px rgba(#CDDDDD, 0.7)
+                    border-radius: 6px
+                    padding:
+                        top: 20px
+                        right: 32px
+                        left: 25px
+                        bottom: 20px
+                    box-sizing: border-box
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+                    margin-bottom: 9px
+                    &:last-child
+                        margin-bottom: 0
+                    .list-number
+                        width: 38px
+                        height: 38px
+                        border-radius: 100%
+                        margin-top: 4px
+                        color: white
+                        font-weight: 700
+                        text-align: center
+                        background-color: $green
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        p
+                            font-size: 23px
+                            margin: 0
+                            line-height: 0.9
+                    .text
+                        width: 90%
+                        box-sizing: border-box
+                        padding-left: 16px
+                        h4
+                            color: $blue
+                            margin: 0
+                            font-size: 20px
+                            margin-bottom: 8px
+                        p
+                            line-height: 130%
+            .form
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                input
+                    width: 100%
+                    border: solid 0.5px rgba(#CDDDDD, 0.4)
+                    border-radius: 6px
+                    padding: 13px 20px
+                    margin-bottom: 6px
+                    box-sizing: border-box
+                    &:nth-child(3),
+                    &:nth-child(4)
+                        width: 49.5%
+                    &[type="submit"]
+                        margin-top: 6px
+                        appareance: none
+                        border: none
+                        font-size: 14px
+                        outline: none
+                        color: white
+                        border-radius: 4px
+                        font-weight: 700
+                        padding: 12px 20px
+                        background-color: $dark-green
+
+@media (max-width: 1440px)
+    .modal
+        .modal-inner
+            width: 68vw
+            height: 78vh
+            .img
+            .data
+                .x
+                    &::before
+                    &::after
+                    &:hover, &:focus
+                        &::before,
+                        &::after
+                .header
+                    img
+                    h3
+                .cards
+                    .card
+                        &:last-child
+                        .list-number
+                            p
+                        .text
+                            h4
+                            p
+
+@media (max-width: 1360px)
+    .modal
+        .modal-inner
+            width: 80vw
+            height: 84vh
+            .img
+            .data
+                .x
+                    &::before
+                    &::after
+                    &:hover, &:focus
+                        &::before,
+                        &::after
+                .header
+                    img
+                    h3
+                .cards
+                    .card
+                        &:last-child
+                        .list-number
+                            p
+                        .text
+                            h4
+                            p
+
+@media (max-width: 1024px)
+    .modal
+        .modal-inner
+            width: 86vw
+            height: 84vh
+            .img
+                width: 0
+            .data
+                width: 100%
+                .x
+                    &::before
+                    &::after
+                    &:hover, &:focus
+                        &::before,
+                        &::after
+                .header
+                    img
+                    h3
+                .cards
+                    .card
+                        &:last-child
+                        .list-number
+                            p
+                        .text
+                            h4
+                            p
+
+@media (max-width: 768px)
+    .modal
+        .modal-inner
+            // height: 74vh
+            // overflow: hidden
+            .img
+                // width: 100%
+                // height: 20%
+            .data
+                width: 100%
+                height: 100%
+                overflow-y: scroll
+                padding: 
+                    top: 60px
+                    bottom: 40px
+                .x
+                    &::before
+                    &::after
+                    &:hover, &:focus
+                        &::before,
+                        &::after
+                .header
+                    img
+                    h3
+                .cards
+                    .card
+                        &:last-child
+                        .list-number
+                            p
+                        .text
+                            h4
+                            p
+
+@media (max-width: 640px)
+    .modal
+        .modal-inner
+            overflow-y: scroll
+            .img
+            .data
+                height: auto
+                .x
+                    &::before
+                    &::after
+                    &:hover, &:focus
+                        &::before,
+                        &::after
+                .header
+                    img
+                    h3
+                .cards
+                    .card
+                        &:last-child
+                        .list-number
+                            p
+                        .text
+                            h4
+                            p
+
+@media (max-width: 375px)
+    .modal
+        .modal-inner
+            .img
+            .data
+                .x
+                    &::before
+                    &::after
+                    &:hover, &:focus
+                        &::before,
+                        &::after
+                .header
+                    img
+                    h3
+                .cards
+                    .card
+                        &:last-child
+                        .list-number
+                            p
+                        .text
+                            h4
+                            p
 
 /* imports
 @import 'header'

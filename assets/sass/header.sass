@@ -1,23 +1,53 @@
 header
     width: 100%
+    position: absolute
+    top: 0
+    // left: 0
+    // right: 0
+    z-index: 9990
+    transition: all ease-in-out 0.3s
+    &.on-down
+        position: fixed
+        background: white
+        .header-inner
+            padding-top: 24px
+            padding-bottom: 24px
     .header-inner
         width: 100%
         box-sizing: border-box
         display: flex 
         justify-content: space-between
         align-items: center
-        padding-top: 48px
+        padding-top: 56px
         a.logo                
             img
                 width: 149px
+        .hamburger
+            display: none
         div.buttons
             a.button                
                 &.left
                     margin-left: 5px
 
+// Cuando sea menor a 1440px
+@media (max-width: 1440px)
+    header
+        .header-inner
+            padding-top: 48px
+            a.logo                
+                img
+            .hamburger
+            div.buttons
+                a.button                
+                    &.left
+
 @media (max-width: 640px)
     header
         // width: 100%
+        &.on-down
+            .header-inner
+                padding-top: 24px
+                padding-bottom: 0
         .header-inner
             // width: 100%
             // box-sizing: border-box
@@ -25,22 +55,12 @@ header
             // justify-content: space-between
             // align-items: center
             padding-top: 48px
+            flex-wrap: wrap
             a.logo                
                 img
                     width: 120px
-            div.buttons
-                a.button                
-                    &.left
-                        // margin-left: 5px
-
-@media (max-width: 375px)
-    header
-        .header-inner
-            flex-wrap: wrap
-            // padding-top: 48px
-            a.logo                
-                img
-                    width: 110px
+            .hamburger
+                display: inherit
             div.buttons
                 display: flex
                 justify-content: space-between
@@ -54,8 +74,37 @@ header
                 transition: all ease 0.3s
                 &.open-buttons
                     height: 38px
+                    margin-bottom: 24px
                 a.button
                     width: 100%
                     padding-top: 10px
                     padding-bottom: 10px
                     &.left
+
+@media (max-width: 375px)
+    header
+        .header-inner
+            // flex-wrap: wrap
+            // padding-top: 48px
+            padding-top: 42px
+            a.logo                
+                img
+                    // width: 110px
+            // div.buttons
+            //     display: flex
+            //     justify-content: space-between
+            //     align-items: flex-start
+            //     text-align: center
+            //     height: auto
+            //     padding-top: 24px
+            //     overflow: hidden
+            //     width: 100%
+            //     height: 0px
+            //     transition: all ease 0.3s
+            //     &.open-buttons
+            //         height: 38px
+            //     a.button
+            //         width: 100%
+            //         padding-top: 10px
+            //         padding-bottom: 10px
+            //         &.left

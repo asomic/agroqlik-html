@@ -10,14 +10,100 @@
     <title>AgroQlik - Por y para Profesionales del Agro</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
-
 </head>
 
 <body class="site-wrapper">
+
+    <!-- Modal Como obtener -->
+    <div class="modal modal-obtener">
+        <div class="modal-inner">
+
+            <div class="img"></div>
+
+            <div class="data">
+                <div class="x"></div>
+                <div class="header">
+                    <img src="./assets/images/hoja.png">
+                    <h3>¿Como obtener <span class="color-green">AgroQlik</span>?</h3>
+                </div>
+                <div class="cards">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="list-number">
+                            <p>1</p>
+                        </div>
+                        <div class="text">
+                            <h4>Regístrate</h4>
+                            <p>
+                                Nulla elementum mauris eget purus tincidunt dictum. Nunc et accumsan turpis, nec eleifend quam. Aenean pretium ultrices ex, vel ultricies aquí.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="list-number">
+                            <p>2</p>
+                        </div>
+                        <div class="text">
+                            <h4>AgroQlik te contácta</h4>
+                            <p>
+                                Nulla elementum mauris eget purus tincidunt dictum. Nunc et accumsan turpis, nec eleifend quam. Aenean pretium ultrices ex, vel ultricies aquí.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="list-number">
+                            <p>3</p>
+                        </div>
+                        <div class="text">
+                            <h4>Descarga la App</h4>
+                            <p>
+                                Nulla elementum mauris eget purus tincidunt dictum. Nunc et accumsan turpis, nec eleifend quam. Aenean pretium ultrices ex, vel ultricies aquí.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Contratar -->
+    <div class="modal modal-contratar">
+        <div class="modal-inner">
+
+            <div class="img"></div>
+
+            <div class="data">
+                <div class="x"></div>
+                <div class="header">
+                    <img src="./assets/images/hoja.png">
+                    <h3>Solicita <span class="color-green">AgroQlik</span></h3>
+                </div>
+                <form class="form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <input type="text" placeholder="Nombre de Empresa" required>
+                    <input type="text" placeholder="Ciudad" required>
+                    <input type="text" placeholder="Región" required>
+                    <input type="submit" name="" value="Quiero la prueba gratis" id="formulario-enviar" required>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
-        <div class="header-inner paddings-l-r">
+        <div class="header-inner paddings-l-r" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out">
             <a href="/" class="logo">
                 <img src="assets/images/logo.png" alt="Ir al Inicio">
             </a>
@@ -28,18 +114,18 @@
             </button>
             <div class="buttons">
                 <a href="#" class="button outline">Iniciar Sesión</a>
-                <a href="#" class="button left">Prueba Gratis</a>
+                <a href="#" class="button left button-plan-prueba">Prueba Gratis</a>
             </div>
         </div>
     </header>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-inner paddings-l-r">
+        <div class="hero-inner paddings-l-r" data-aos="fade" data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-delay="400">
             <h1 class="hero"><span class="color-green">Tenga el control</span> de lo que sucede en terreno</h1>
             <p>Nulla elementum mauris eget purus tincidunt dictum. Nunc et accumsan turpis, nec eleifend quam. Aenean
                 pretium ultrices ex, vel ultricies neque accumsan vel. Pellentesque imperdiet</p>
-            <a href="#" class="button">Pruebe Gratis</a>
+            <a href="#" class="button button-plan-prueba">Pruebe Gratis</a>
         </div>
     </section>
 
@@ -78,10 +164,10 @@
     <!-- Presentacion de la App -->
     <section class="the-app">
         <div class="the-app-inner paddings-l-r">
-            <div class="img">
+            <div class="img" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
                 <img src="assets/images/app-mockup.png" alt="App de NFIT">
             </div>
-            <div class="data">
+            <div class="data" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                 <h3>
                     <span class="color-green">Suspendisse</span> magna dolor, porta ut tempus vitae, ullamcorper eget mauris
                 </h3>
@@ -123,7 +209,7 @@
     <!-- Presentacion de la Web App -->
     <section class="the-webapp">
         <div class="the-webapp-inner paddings-l-r">
-            <div class="data">
+            <div class="data" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                 <h3 class="h">Suspendisse magna dolor, <span class="color-green">porta ut tempus vitae</span>,
                     ullamcorper eget mauris</h3>
                 <div class="checks">
@@ -154,7 +240,7 @@
                 </div>
 
             </div>
-            <div class="img">
+            <div class="img" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
                 <img src="assets/images/webapp-mockup.png" alt="WebApp de NFIT">
             </div>
         </div>
@@ -163,10 +249,10 @@
     <!-- Los Servicios -->
     <section class="servicios ">
         <div class="servicios-inner paddings-l-r">
-            <h2>Suspendisse magna dolor, porta ut tempus vitae, ullamcorper eget mauris</h2>
+            <h2 data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out">Suspendisse magna dolor, porta ut tempus vitae, ullamcorper eget mauris</h2>
             <div class="items">
                 <!-- Item -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div class="header">
                         <img src="assets/images/servicio-analisis.png">
                         <h5>Análisis y Gestión</h5>
@@ -199,7 +285,7 @@
                     </div>
                 </div>
                 <!-- Item -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                     <div class="header">
                         <img src="assets/images/servicio-rrss.png">
                         <h5>Recursos Humanos</h5>
@@ -232,7 +318,7 @@
                     </div>
                 </div>
                 <!-- Item -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600">
                     <div class="header">
                         <img src="assets/images/servicio-bi.png">
                         <h5>Inteligencia de Negocios</h5>
@@ -272,10 +358,10 @@
     <section class="equipo">
         <div class="equipo-inner paddings-l-r">
             <!-- <img class="hoja" src="assets/images/icon-soft.png"> -->
-            <h2>Un equipo con trayectoria, cercano y profesional</h2>
+            <h2 data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out">Un equipo con trayectoria, cercano y profesional</h2>
             <div class="personas">
                 <!-- Persona -->
-                <div class="persona">
+                <div class="persona" data-aos="fade-right" data-aos-duration="1000">
                     <div class="img paulo">
                         <!-- <img src="assets/images/foto-paulo.jpg" alt=""> -->
                     </div>
@@ -300,12 +386,12 @@
                     </div>
                 </div>
                 <!-- Persona -->
-                <div class="persona">
-                    <div class="img susana" data-aos="fade-left" data-aos-duration="1000">
+                <div class="persona" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="img susana">
                         <!-- <img src="assets/images/foto-susana.png" alt=""> -->
 
                     </div>
-                    <div class="data" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="data">
                         <h5>Susana Álvarez</h5>
                         <p class="description">
                             Senior en Recursos Humanos
@@ -331,8 +417,8 @@
     </section>
 
     <!-- Testimonio -->
-    <section class="testimonio">
-        <div class="testimonio-inner paddings-l-r">
+    <section class="testimonio" >
+        <div class="testimonio-inner paddings-l-r" data-aos="fade" data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-delay="200">
             <div class="item">
                 <div class="img">
                     <img src="assets/images/test-1.jpg" alt="">
@@ -349,7 +435,7 @@
     <!-- Planes -->
     <section class="planes-wrapper">
         <div class="planes-inner paddings-l-r">
-            <h2>
+            <h2 data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out">
                 Planes
                 <span>
                     para todo tipo de empresas
@@ -357,7 +443,7 @@
             </h2>
             <div class="items">
                 <!-- Card Plan -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="150">
                     <div class="header">
                         <img src="assets/images/hoja.png">
                         <h3>Plan 1</h3>
@@ -386,11 +472,11 @@
                     </div>
                     <h4>$00.000</h4>
                     <div>
-                        <a href="#" class="button">Más Información</a>
+                        <a href="#" class="button button-plan-info">Más Información</a>
                     </div>
                 </div>
                 <!-- Card Plan -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
                     <div class="header">
                         <img src="assets/images/hoja.png">
                         <h3>Plan 2</h3>
@@ -419,11 +505,11 @@
                     </div>
                     <h4>$00.000</h4>
                     <div>
-                        <a href="#" class="button">Más Información</a>
+                        <a href="#" class="button button-plan-info">Más Información</a>
                     </div>
                 </div>
                 <!-- Card Plan -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="450">
                     <div class="header">
                         <img src="assets/images/hoja.png">
                         <h3>Plan 3</h3>
@@ -452,7 +538,7 @@
                     </div>
                     <h4>$00.000</h4>
                     <div>
-                        <a href="#" class="button">Más Información</a>
+                        <a href="#" class="button button-plan-info">Más Información</a>
                     </div>
                 </div>
             </div>
@@ -464,7 +550,7 @@
         <div class="hectareas-inner paddings-l-r">
             <!-- <div> -->
                 <!-- <img class="hoja" src="assets/images/icon-soft.png" alt=""> -->
-            <h2>
+            <h2 data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out">
                 <span class="color-green">
                     Más de 1800Há
                 </span>
@@ -473,25 +559,25 @@
             <!-- </div> -->
             <div class="items">
                 <!-- Item -->
-                <div class="item itemm card">
+                <div class="item itemm card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out">
                     <img src="assets/images/icon-cereza.png">
                     <h5>160Há</h5>
                     <p class="color-green">Cerezos</p>
                 </div>
                 <!-- Item -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="200">
                     <img src="assets/images/icon-kiwi.png">
                     <h5>180Há</h5>
                     <p class="color-green">Kiwi</p>
                 </div>
                 <!-- Item -->
-                <div class="item itemm card">
+                <div class="item itemm card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="400">
                     <img src="assets/images/icon-uva.png">
                     <h5>632Há</h5>
                     <p class="color-green">Viñas</p>
                 </div>
                 <!-- Item -->
-                <div class="item card">
+                <div class="item card" data-aos="fade" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="600">
                     <img src="assets/images/icon-manzana.png">
                     <h5>720Há</h5>
                     <p class="color-green">Manzanos</p>
@@ -503,7 +589,7 @@
 
     <!-- CTA -->
     <section class="cta">
-        <div class="cta-inner paddings-l-r">
+        <div class="cta-inner paddings-l-r" data-aos="fade" data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-delay="200">
                 <h1>¿Lorem ipsum dolor sit amet ante?</h1>
                 <a href="" class="button">Contáctenos</a>
         </div>
@@ -552,6 +638,7 @@
     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
